@@ -1,0 +1,221 @@
+,CurrentLat,CurrentLong,City,State.Province.Region,Country,Color
+S_102,33.91,-84.31,Atlanta,GA,United States,Amplicon
+S_103,51.05,-114.18,Calgary,Alberta,Canada,Amplicon
+S_111,44.49,-72.37,Hardwick,VT,United States,Amplicon
+S_113,42.38,-71.11,Somerville,MA,United States,Amplicon
+S_116,39.62,-79.95,Morgantown,WV,United States,Amplicon
+S_117,39.55,-119.79,Reno,NV,United States,Amplicon
+S_118,37.8,-122.44,San Francisco,CA,United States,Amplicon
+S_12,35.11,-78.87,Fayetteville,NC,United States,Amplicon
+S_131,46.73,-117,Moscow,ID,United States,Amplicon
+S_134,48.28,-116.57,Sandpoint,ID,United States,Amplicon
+S_138,48.04,-123.44,Port Angeles,WA,United States,Amplicon
+S_14,43.64,-70.41,Gorham,ME,United States,Amplicon
+S_145,37.75,-122.46,San Francisco,CA,United States,Amplicon
+S_15,46.86,-122.22,Eatonville,WA,United States,Amplicon
+S_159,37.9,-122.29,El Cerrito,CA,United States,Amplicon
+S_16,37.64,-79.59,Natural Bridge,VA,United States,Amplicon
+S_164,33.92,-83.41,Athens,GA,United States,Amplicon
+S_168,44.96,-93.23,Minneapolis,MN,United States,Amplicon
+S_17,42.11,-87.78,Northfield,IL,United States,Amplicon
+S_170,41.48,-81.74,Cleveland,OH,United States,Amplicon
+S_171,44.44,-124.08,Waldport,OR,United States,Amplicon
+S_172,37.89,-122.3,Albany,CA,United States,Amplicon
+S_173,47.14,-122.82,Olympia,WA,United States,Amplicon
+S_174,38.28,-122.29,Napa,CA,United States,Amplicon
+S_175,41.3,-105.57,Laramie,WY,United States,Amplicon
+S_177,47.68,-122.1,Redmond,WA,United States,Amplicon
+S_181,48.72,-122.5,Bellingham,WA,United States,Amplicon
+S_185,40.42,-104.7,Greeley,CO,United States,Amplicon
+S_191,35.49,-97.55,Okalhoma City,OK,United States,Amplicon
+S_192,36.98,-121.89,Aptos,CA,United States,Amplicon
+S_195,29.78,-95.4,Houston,TX,United States,Amplicon
+S_2,39.74,-105.05,Denver,CO,United States,Amplicon
+S_208,38.88,-96.56,Alta Vista,KS,United States,Amplicon
+S_212,35.31,-120.86,Los Osos,CA,United States,Amplicon
+S_223,41.04,-73.67,Greenwich,CT,United States,Amplicon
+S_226,39.12,-92.37,Columbia,MO,United States,Amplicon
+S_231,44.79,-122.96,Turner,OR,United States,Amplicon
+S_236,47.66,-122.33,Seattle,WA,United States,Amplicon
+S_237,47.91,-122.1,Snohomish,WA,United States,Amplicon
+S_239,33.97,-118.4,Los Angeles,CA,United States,Amplicon
+S_240,44.32,-89.29,Almond,WI,United States,Amplicon
+S_241,36.98,-121.92,Aptos,CA,United States,Amplicon
+S_246,37.23,-121.95,Los Gatos,CA,United States,Amplicon
+S_253,39.91,-86.31,Indianapolis,IN,United States,Amplicon
+S_256,37.34,-122,Santa Clara,CA,United States,Amplicon
+S_257,-37.63,145.18,Hurstbridge,Victoria,Australia,Amplicon
+S_261,42.32,-72.63,Northampton,MA,United States,Amplicon
+S_262,33.78,-84.37,Atlanta,GA,United States,Amplicon
+S_263,40.57,-109.92,Whiterocks,UT,United States,Amplicon
+S_269,47.64,-122.35,Seattle,WA,United States,Amplicon
+S_273,42.99,-72.66,Brattleboro,VT,United States,Amplicon
+S_277,51.51,-0.09,London,London,United Kingdom,Amplicon
+S_278,42.91,-78.72,Depew,NY,United States,Amplicon
+S_284,47.6,-122.31,Seattle,WA,United States,Amplicon
+S_287,44.91,-93.1,West Saint Paul,MN,United States,Amplicon
+S_29,35.82,-78.71,Raleigh,NC,United States,Amplicon
+S_290,47.67,-111.77,Power,MT,United States,Amplicon
+S_291,42.74,-124.49,Port Orford,OR,United States,Amplicon
+S_292,34.68,-118.14,Lancaster,CA,United States,Amplicon
+S_302,47.71,9.27,Meersburg,BadenWurttemberg,Germany,Amplicon
+S_312,43.82,-72.2,East Thetford,VT,United States,Amplicon
+S_313,40.67,-73.99,Brooklyn,NY,United States,Amplicon
+S_315,42.33,-73.64,Ghent,NY,United States,Amplicon
+S_316,39.2,-76.85,Columbia,MD,United States,Amplicon
+S_342,44.75,-78.05,Apsley,Ontario,Canada,Amplicon
+S_344,39.82,-84.93,Richmond,IN,United States,Amplicon
+S_346,51.84,5.88,Nijmegen,Gelderland,Netherlands,Amplicon
+S_348,49.32,-122.96,North Vancouver ,British Columbia,Canada,Amplicon
+S_358,35.78,-78.65,Raleigh,NC,United States,Amplicon
+S_362,39.98,-75.25,Philadelphia,PA,United States,Amplicon
+S_374,35.66,-105.93,Santa Fe,NM,United States,Amplicon
+S_375,35.66,-105.93,Santa Fe,NM,United States,Amplicon
+S_378,47.59,-122.31,Seattle,WA,United States,Amplicon
+S_379,35.81,-78.59,Raleigh,NC,United States,Amplicon
+S_382,44.63,-123.12,Albany,OR,United States,Amplicon
+S_383,48.12,-114.46,Kila,MT,United States,Amplicon
+S_384,39.86,-86.26,Indianapolis,IN,United States,Amplicon
+S_386_2,-33.99,151.07,Oatley,New South Wales,Australia,Amplicon
+S_387,42.38,-71.1,Somerville,MA,United States,Amplicon
+S_391,45.47,-122.75,Portland,OR,United States,Amplicon
+S_395,37.42,-122.1,Palo Alto,CA,United States,Amplicon
+S_397,38.79,-77.28,Burke,VA,United States,Amplicon
+S_399,42.83,-83.19,Oxford,MI,United States,Amplicon
+S_402,40.38,-86.88,Lafayette,IN,United States,Amplicon
+S_403,40.53,-75.32,Coopersburg,PA,United States,Amplicon
+S_404,37.25,-121.88,San Jose,CA,United States,Amplicon
+S_406,49.88,-97.19,Winnipeg,Manitoba,Canada,Amplicon
+S_411,35.95,-84.19,Knoxville ,TN,United States,Amplicon
+S_415,37.65,-122.42,San Francisco,CA,United States,Amplicon
+S_417,45.5,-73.58,Montreal,Quebec,Canada,Amplicon
+S_419,45.65,13.76,Trieste,Italy,Italy,Amplicon
+S_422,44.39,-68.21,Bar Harbor,ME,United States,Amplicon
+S_43,45.55,-122.58,Portland,OR,United States,Amplicon
+S_434,36.09,-79.8,Greensboro,NC,United States,Amplicon
+S_435,34.3,-119.29,Ventura,CA,United States,Amplicon
+S_437,38.31,-77.22,King George,VA,United States,Amplicon
+S_438,44.57,-123.98,Toledo,OR,United States,Amplicon
+S_440,38.46,-77.46,Stafford,VA,United States,Amplicon
+S_442,42.44,-76.51,Ithaca,NY,United States,Amplicon
+S_448,32.34,-92.7,Quitman,LA,United States,Amplicon
+S_450,39.84,-86.14,Indianapolis,IN,United States,Amplicon
+S_451,40.71,-74.37,Summit,NJ,United States,Amplicon
+S_452,39.75,-121.82,Chico ,CA,United States,Amplicon
+S_458,52.53,4.7,Uitgeest,North Holland,Netherlands,Amplicon
+S_459,-34.94,138.74,Ashton,South Australia ,Australia,Amplicon
+S_46,46.19,-123.82,Astoria,OR,United States,Amplicon
+S_460,37.72,-122.13,San Leandro,CA,United States,Amplicon
+S_463,60.29,-134.28,Tagish,Yukon,Canada,Amplicon
+S_465,59.28,18.08,Enskede,NA,Sweden,Amplicon
+S_466,-33.48,149.49,Bathurst,New South Wales,Australia,Amplicon
+S_467,-33.88,151.21,Richmond,Tasmania,Australia,Amplicon
+S_468,35.41,-120.87,Morro Bay,CA,United States,Amplicon
+S_470,37.64,-122.48,Pacifica,CA,United States,Amplicon
+S_473,38.55,-121.73,David,CA,United States,Amplicon
+S_474,30.71,-97.73,Georgetown,TX,United States,Amplicon
+S_476,53.37,-3.18,Wirral,Merseyside,United Kingdom,Amplicon
+S_477,34.26,-118.33,Sunland,CA,United States,Amplicon
+S_478,47.49,19,Budapest,NA,Hungary,Amplicon
+S_481,47.58,-122.15,Bellevue,WA,United States,Amplicon
+S_486,37.87,-122.31,Berkeley ,CA,United States,Amplicon
+S_489,30.41,-97.76,Austin,TX,United States,Amplicon
+S_5,47.68,-122.29,Seattle,WA,United States,Amplicon
+S_502,35.9,-79.06,Apex,NC,United States,Amplicon
+S_509,35.18,-83.39,Franklin,NC,United States,Amplicon
+S_51,38.93,-77.03,Washington,DC,United States,Amplicon
+S_512,40.97,-81.64,Akron,OH,United States,Amplicon
+S_518,49.27,-123.18,Vancouver,British Columbia,Canada,Amplicon
+S_522,35.8,-79.23,Pittsboro,NC,United States,Amplicon
+S_524,43.36,-110.72,Jackson,WY,United States,Amplicon
+S_526,39.35,-123.38,Willits,CA,United States,Amplicon
+S_528,34,-84.19,John's Creek,GA,United States,Amplicon
+S_529,52.09,5.12,Utrecht,Utrecht,Netherlands,Amplicon
+S_531,48.88,2.34,Paris,NA,France,Amplicon
+S_533,38.6,-90.25,St. Louis,MO,United States,Amplicon
+S_536,53.82,-1.78,"Shipley, Bradford",West Yorkshire,United Kingdom,Amplicon
+S_537,39.39,-76.58,Baltimore,MD,United States,Amplicon
+S_539,45.5,-122.53,Portland,OR,United States,Amplicon
+S_54,39.14,-84.37,Mariemont,OH,United States,Amplicon
+S_547,42.44,-76.69,Trumansburg,NY,United States,Amplicon
+S_550,34.05,-118.44,Los Angeles,CA,United States,Amplicon
+S_56,49.16,-121.96,Chilliwack,British Columbia,Canada,Amplicon
+S_58,44.01,-70.06,Lisbon Falls,ME,United States,Amplicon
+S_6,46.05,-118.34,Walla Walla,WA,United States,Amplicon
+S_61,37.33,-121.92,San Jose,CA,United States,Amplicon
+S_63,34,-118.4,Culver City,CA,United States,Amplicon
+S_64,35.2,-111.57,Flagstaff,AZ,United States,Amplicon
+S_70,40.2,-105.54,Allenspark,CO,United States,Amplicon
+S_71,41.15,-96.01,Papillion,NE,United States,Amplicon
+S_75,33.46,-88.82,Starkville,MS,United States,Amplicon
+S_78,39.1,-77.24,n potomac,MD,United States,Amplicon
+S_8,38.44,-122.86,Sebastopol,CA,United States,Amplicon
+S_81,38.59,-122.59,Calistoga,CA,United States,Amplicon
+S_82,40.84,-83.27,Upper Sandusky,OH,United States,Amplicon
+S_85,41.24,-95.96,Omaha,NE,United States,Amplicon
+S_86,44.71,-72.94,East Fairfield,VT,United States,Amplicon
+S_90,42.31,-83.71,Ann Arbor,MI,United States,Amplicon
+S_91,34.59,-112.5,Prescott,AZ,United States,Amplicon
+S_95,40.53,-104.93,Windsor,CO,United States,Amplicon
+S_96,42.14,-71.44,Framingham,MA,United States,Amplicon
+GCF_000379545.1,52.373169,4.89066,,,,NCBI genome
+GCF_001580615.1,50.503887,4.469936,,,,NCBI genome
+GCF_001580625.1,50.503887,4.469936,,,,NCBI genome
+GCF_001580635.1,50.503887,4.469936,,,,NCBI genome
+GCF_001580695.1,50.503887,4.469936,,,,NCBI genome
+GCF_001580705.1,50.503887,4.469936,,,,NCBI genome
+GCF_001580815.1,50.503887,4.469936,,,,NCBI genome
+GCF_001581035.1,50.503887,4.469936,,,,NCBI genome
+GCF_001581045.1,50.503887,4.469936,,,,NCBI genome
+GCF_001581085.1,50.503887,4.469936,,,,NCBI genome
+GCF_002153475.1,43.04794,-76.14745,,,,NCBI genome
+GCF_002153685.1,43.04794,-76.14745,,,,NCBI genome
+GCF_002153735.1,43.04794,-76.14745,,,,NCBI genome
+GCF_002153775.1,43.04794,-76.14745,,,,NCBI genome
+GCF_002409655.1,26.074301,119.296539,,,,NCBI genome
+GCF_004302915.1,41.871941,12.56738,,,,NCBI genome
+GCF_006539325.1,50.503887,4.469936,,,,NCBI genome
+GCF_007989335.1,-6.59712,106.795219,,,,NCBI genome
+GCF_007991375.1,20.593683,78.962883,,,,NCBI genome
+GCF_007991395.1,40.39794,-8.1304,,,,NCBI genome
+GCF_011516735.1,55.378052,-3.435973,,,,NCBI genome
+GCF_011516875.1,50.503887,4.469936,,,,NCBI genome
+GCF_011516935.1,15.870032,100.992538,,,,NCBI genome
+GCF_014132135.1,35.689487,139.691711,,,,NCBI genome
+GCF_017377745.1,9.13179,99.333618,,,,NCBI genome
+GCF_021284605.1,33.538559,-112.183701,,,,NCBI genome
+GCF_022643725.1,44.395561,-89.834518,,,,NCBI genome
+GCF_024158385.1,50.503887,4.469936,,,,NCBI genome
+GCF_024158465.1,50.503887,4.469936,,,,NCBI genome
+GCF_024158475.1,50.503887,4.469936,,,,NCBI genome
+GCF_024158505.1,50.503887,4.469936,,,,NCBI genome
+GCF_030450005.1,31.58194,120.298042,,,,NCBI genome
+011_1B,38.96,-77.13,,,,Original genome
+275_1B,35.98,-78.9,,,,Original genome
+338_1B,47.58,-122.39,,,,Original genome
+361_1B,14.95,102.02,,,,Original genome
+C_13_2_HR,40.66,-77.59,,,,Original genome
+C_275_3_HR,35.98,-78.9,,,,Original genome
+C_364_1_HR,-37.72,145.16,,,,Original genome
+G_125_1B,34.03,-118.38,,,,Original genome
+G_154_1A,32.11,-110.79,,,,Original genome
+G_199_1A,35.98,-78.9,,,,Original genome
+G_24_1A,42.92,-85.9,,,,Original genome
+G_272_1B,59.56,9.27,,,,Original genome
+G_35_1B,35.96,-78.94,,,,Original genome
+G_398_1B,47.71,-122.3,,,,Original genome
+G_490_1A,35.18,-83.39,,,,Original genome
+G_497_1B,34.03,-118.38,,,,Original genome
+G_507_1A,38.92,-77.05,,,,Original genome
+G_514_1B,41.05,-85.17,,,,Original genome
+G_517_1B,49.27,-123.18,,,,Original genome
+G_65_1_NS,38.99794,-105.550888,,,,Original genome
+G_97_1A,33.78,-117.8,,,,Original genome
+SRR10454486C2703,48.7,-119.44,,,,Original genome
+SRR10454491C1008,-40.68,172.68,,,,Original genome
+SRR10454494C1110,40.72,-73.95,,,,Original genome
+SRR10454509C293,37.23,-80.41,,,,Original genome
+SRR10454511C706,34.03,-118.38,,,,Original genome
+SRR10454513_mb.1,39.52,-119.79,,,,Original genome
+SRR10454516C127,36,-78.92,,,,Original genome
+SRR10454517C1506,38.46,-122.62,,,,Original genome

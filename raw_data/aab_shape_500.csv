@@ -1,0 +1,533 @@
+,CurrentLat,CurrentLong,City,State.Province.Region,Country,Shape,Color
+S_1,43.03,-89.49,Madison,WI,United States,AAB not detected - amplicon,
+S_10,39.21,-77.31,Boyds ,MD,United States,AAB not detected - amplicon,
+S_100,60.18,24.92,Helsinki,Uusimaa,Finland,AAB not detected - amplicon,
+S_101,34.27,-118.91,Moorpark,CA,United States,AAB not detected - amplicon,
+S_102,33.91,-84.31,Atlanta,GA,United States,AAB detected - amplicon,Amplicon
+S_103,51.05,-114.18,Calgary,Alberta,Canada,AAB detected - amplicon,Amplicon
+S_104,37.73,-122.41,San Francisco,CA,United States,AAB not detected - amplicon,
+S_105,39.94,-76.7,York,PA,United States,AAB not detected - amplicon,
+S_106,38.26,-122.04,Fairfield,CA,United States,AAB not detected - amplicon,
+S_109,42.35,-71.09,Boston,MA,United States,AAB not detected - amplicon,
+S_11,38.96,-77.13,Bethesda,MD,United States,AAB detected - amplicon,Amplicon
+S_110,42.39,-71.11,Somervilee,MA,United States,AAB not detected - amplicon,
+S_111,44.49,-72.37,Hardwick,VT,United States,AAB detected - amplicon,Amplicon
+S_112,42.34,-71.08,Boston,MA,United States,AAB not detected - amplicon,
+S_113,42.38,-71.11,Somerville,MA,United States,AAB detected - amplicon,Amplicon
+S_114,42.96,-81.4,Komoka,Ontario,Canada,AAB not detected - amplicon,
+S_115,37.18,-3.6,Granada,Granada,Spain,AAB not detected - amplicon,
+S_116,39.62,-79.95,Morgantown,WV,United States,AAB detected - amplicon,Amplicon
+S_117,39.55,-119.79,Reno,NV,United States,AAB detected - amplicon,Amplicon
+S_118,37.8,-122.44,San Francisco,CA,United States,AAB detected - amplicon,Amplicon
+S_119,42.61,-111.59,Soda Springs,ID,United States,AAB not detected - amplicon,
+S_12,35.11,-78.87,Fayetteville,NC,United States,AAB detected - amplicon,Amplicon
+S_120,39.95,-75.22,Philadelphia,PA,United States,AAB not detected - amplicon,
+S_122,35.8,-78.68,Raleigh,NC,United States,AAB not detected - amplicon,
+S_123,36.29,-94.18,Rogers,AR,United States,AAB not detected - amplicon,
+S_124,39.6,-77.97,Hedgesville,WV,United States,AAB not detected - amplicon,
+S_125,38.44,-121.96,Vacaville ,CA,United States,AAB detected - amplicon,Amplicon
+S_126,41.14,-73.77,Pleasantville,NY,United States,AAB not detected - amplicon,
+S_127,35.98,-84.35,Oak Ridge,TN,United States,AAB not detected - amplicon,
+S_128,40.38,-74.7,Skillman,NJ,United States,AAB not detected - amplicon,
+S_129,46.89,-114.08,Missoula,MT,United States,AAB not detected - amplicon,
+S_13,40.66,-77.59,Reedsville,PA,United States,AAB detected - amplicon,Amplicon
+S_130,48.7,-119.44,Tonasket,WA,United States,AAB detected - amplicon,Amplicon
+S_131,46.73,-117,Moscow,ID,United States,AAB detected - amplicon,Amplicon
+S_134,48.28,-116.57,Sandpoint,ID,United States,AAB detected - amplicon,Amplicon
+S_135,44.05,-92.49,Rochester ,MN,United States,AAB not detected - amplicon,
+S_136,38.81,-77.06,Alexandria,VI,United States,AAB not detected - amplicon,
+S_137,46.73,-116.97,Moscow,ID,United States,AAB not detected - amplicon,
+S_138,48.04,-123.44,Port Angeles,WA,United States,AAB detected - amplicon,Amplicon
+S_139,47.25,-122.46,Tacoma,WA,United States,AAB not detected - amplicon,
+S_14,43.64,-70.41,Gorham,ME,United States,AAB detected - amplicon,Amplicon
+S_140,38.11,-122.57,Novato,CA,United States,AAB not detected - amplicon,
+S_141,37.44,-77.47,N Chesterfield,VA,United States,AAB not detected - amplicon,
+S_142,35.97,-84.19,Knoxville,TN,United States,AAB not detected - amplicon,
+S_143,34.08,-116.37,Yucca Valley,CA,United States,AAB not detected - amplicon,
+S_144,34.28,-118.55,Porter Ranch,CA,United States,AAB not detected - amplicon,
+S_145,37.75,-122.46,San Francisco,CA,United States,AAB detected - amplicon,Amplicon
+S_146,34.77,-92.42,Little Rock,AR,United States,AAB not detected - amplicon,
+S_147,37.35,-79.84,Troutville,VA,United States,AAB not detected - amplicon,
+S_148,38.92,-77.05,Washington,DC,United States,AAB not detected - amplicon,
+S_149,44.03,-123.1,Eugene,OR,United States,AAB not detected - amplicon,
+S_15,46.86,-122.22,Eatonville,WA,United States,AAB detected - amplicon,Amplicon
+S_150,38.87,-77.08,Arlington,VA,United States,AAB not detected - amplicon,
+S_151,43.81,-88.48,Norrh Fond Du Lac,WI,United States,AAB not detected - amplicon,
+S_152,39.67,-105.14,Lakewood,CO,United States,AAB not detected - amplicon,
+S_153,41.77,-73.1,Harwinton,CT,United States,AAB not detected - amplicon,
+S_154,32.11,-110.79,Tucson,AZ,United States,AAB detected - amplicon,Amplicon
+S_155,49.34,-123.14,West Vancouver,British Columbia,Canada,AAB not detected - amplicon,
+S_156,49.34,-123.14,West Vancouver,British Columbia,Canada,AAB not detected - amplicon,
+S_157,45.53,-122.98,Hillsboro,OR,United States,AAB not detected - amplicon,
+S_158,47.73,-122.62,Poulsbo ,WA,United States,AAB not detected - amplicon,
+S_159,37.9,-122.29,El Cerrito,CA,United States,AAB detected - amplicon,Amplicon
+S_16,37.64,-79.59,Natural Bridge,VA,United States,AAB detected - amplicon,Amplicon
+S_160,37.71,-122.17,San Leandro,CA,United States,AAB not detected - amplicon,
+S_161,37.71,-122.17,San Leandro,CA,United States,AAB not detected - amplicon,
+S_162,37.71,-122.17,San Leandro,CA,United States,AAB not detected - amplicon,
+S_163,45.69,-122.63,Vancouver,WA,United States,AAB not detected - amplicon,
+S_164,33.92,-83.41,Athens,GA,United States,AAB detected - amplicon,Amplicon
+S_165,49.34,-123.14,West Vancouver,British Columbia,Canada,AAB not detected - amplicon,
+S_166,43.24,-88.01,Mequon,WI,United States,AAB not detected - amplicon,
+S_167,37.41,-77.69,Midlothian,VI,United States,AAB not detected - amplicon,
+S_168,44.96,-93.23,Minneapolis,MN,United States,AAB detected - amplicon,Amplicon
+S_169,41.48,-81.74,Cleveland,OH,United States,AAB not detected - amplicon,
+S_17,42.11,-87.78,Northfield,IL,United States,AAB detected - amplicon,Amplicon
+S_170,41.48,-81.74,Cleveland,OH,United States,AAB detected - amplicon,Amplicon
+S_171,44.44,-124.08,Waldport,OR,United States,AAB detected - amplicon,Amplicon
+S_172,37.89,-122.3,Albany,CA,United States,AAB detected - amplicon,Amplicon
+S_173,47.14,-122.82,Olympia,WA,United States,AAB detected - amplicon,Amplicon
+S_174,38.28,-122.29,Napa,CA,United States,AAB detected - amplicon,Amplicon
+S_175,41.3,-105.57,Laramie,WY,United States,AAB detected - amplicon,Amplicon
+S_176,40.89,-81.52,Massillon,OH,United States,AAB not detected - amplicon,
+S_177,47.68,-122.1,Redmond,WA,United States,AAB detected - amplicon,Amplicon
+S_179,27.99,-82.69,Safety Harbor,FL,United States,AAB not detected - amplicon,
+S_18,30.33,-91.12,Baton Rouge,LA,United States,AAB not detected - amplicon,
+S_180,44.91,-93.74,St. Bonifacius,MN,United States,AAB not detected - amplicon,
+S_181,48.72,-122.5,Bellingham,WA,United States,AAB detected - amplicon,Amplicon
+S_182,39.26,-94.9,Lansing,KS,United States,AAB not detected - amplicon,
+S_183,43.06,-89.46,Madison,WI,United States,AAB not detected - amplicon,
+S_184,64.83,-147.94,Fairbanks,AK,United States,AAB not detected - amplicon,
+S_185,40.42,-104.7,Greeley,CO,United States,AAB detected - amplicon,Amplicon
+S_186,38.96,-94.46,Kansas City,MO,United States,AAB not detected - amplicon,
+S_187,41.86,-87.66,Chicago,IL,United States,AAB not detected - amplicon,
+S_188,41.86,-87.66,Chicago,IL,United States,AAB not detected - amplicon,
+S_189,34.29,-118.73,Simi Valley,CA,United States,AAB not detected - amplicon,
+S_19,39.94,-104.94,Thornton,CO,United States,AAB not detected - amplicon,
+S_190,35.15,-89.79,Cordova,TN,United States,AAB not detected - amplicon,
+S_191,35.49,-97.55,Okalhoma City,OK,United States,AAB detected - amplicon,Amplicon
+S_192,36.98,-121.89,Aptos,CA,United States,AAB detected - amplicon,Amplicon
+S_193,37.88,-122.29,Berkeley,CA,United States,AAB not detected - amplicon,
+S_194,33.77,-118.16,Long Beach,CA,United States,AAB not detected - amplicon,
+S_195,29.78,-95.4,Houston,TX,United States,AAB detected - amplicon,Amplicon
+S_196,39.17,-86.54,Bloomington,IN,United States,AAB not detected - amplicon,
+S_198,43.74,-79.4,Toronto,Ontario,Canada,AAB not detected - amplicon,
+S_199,35.64,-78.87,Holly Springs,NC,United States,AAB detected - amplicon,Amplicon
+S_2,39.74,-105.05,Denver,CO,United States,AAB detected - amplicon,Amplicon
+S_20,38.46,-122.62,Santa Rosa,CA,United States,AAB detected - amplicon,Amplicon
+S_200,37.02,-80.35,Pilot,VA,United States,AAB not detected - amplicon,
+S_202,42.37,-71.1,Cambridge,MA,United States,AAB not detected - amplicon,
+S_204,47.65,-122.4,Seattle,WA,United States,AAB not detected - amplicon,
+S_205,47.67,-122.31,Seattle,WA,United States,AAB not detected - amplicon,
+S_206,-37.57,175.92,Katikati,Bay of Plenty,New Zealand,AAB not detected - amplicon,
+S_207,44.07,-121.33,Bend,OR,United States,AAB not detected - amplicon,
+S_208,38.88,-96.56,Alta Vista,KS,United States,AAB detected - amplicon,Amplicon
+S_209,37.9,-122.08,Walnut Creek,CA,United States,AAB not detected - amplicon,
+S_21,34.08,-118.27,Los Angeles,CA,United States,AAB not detected - amplicon,
+S_211,37.22,-80.39,Blacksburg,VA,United States,AAB not detected - amplicon,
+S_212,35.31,-120.86,Los Osos,CA,United States,AAB detected - amplicon,Amplicon
+S_213,35.74,-91.66,Batesville,AR,United States,AAB not detected - amplicon,
+S_214,33.41,-111.49,Apache Junction,AZ,United States,AAB not detected - amplicon,
+S_215,39.08,-108.62,Grand Junction,CO,United States,AAB not detected - amplicon,
+S_216,43.86,-70.15,Freeport,ME,United States,AAB not detected - amplicon,
+S_217,47.75,-116.74,Coeur D Alene,ID,United States,AAB not detected - amplicon,
+S_218,-36.9,174.64,Auckland,NA,New Zealand,AAB not detected - amplicon,
+S_219,40.69,-75.93,New Ringgold,PA,United States,AAB not detected - amplicon,
+S_22,43.05,-89.45,Madison,WI,United States,AAB not detected - amplicon,
+S_220,44.46,-93.17,Northfield,MN,United States,AAB not detected - amplicon,
+S_221,46.82,-92.06,Duluth,MN,United States,AAB not detected - amplicon,
+S_222,33.67,-117.81,Irvine,CA,United States,AAB not detected - amplicon,
+S_223,41.04,-73.67,Greenwich,CT,United States,AAB detected - amplicon,Amplicon
+S_224,33.81,-118.11,Long Beach,CA,United States,AAB not detected - amplicon,
+S_225,39.08,-104.87,Monument,CO,United States,AAB not detected - amplicon,
+S_226,39.12,-92.37,Columbia,MO,United States,AAB detected - amplicon,Amplicon
+S_227,36.82,-107.99,Aztec,NM,United States,AAB not detected - amplicon,
+S_228,51.58,-0.2,London,London,United Kingdom,AAB not detected - amplicon,
+S_23,39.79,-105.04,Denver,CO,United States,AAB not detected - amplicon,
+S_230,37.97,-84.57,Nicholasville,KY,United States,AAB not detected - amplicon,
+S_231,44.79,-122.96,Turner,OR,United States,AAB detected - amplicon,Amplicon
+S_232,30.63,-96.35,Bryan,TX,United States,AAB not detected - amplicon,
+S_233,33.48,-111.66,Mesa,AZ,United States,AAB not detected - amplicon,
+S_234,32.81,-117.01,San Diego,CA,United States,AAB not detected - amplicon,
+S_235,39.95,-74.18,Toms River,NJ,United States,AAB not detected - amplicon,
+S_236,47.66,-122.33,Seattle,WA,United States,AAB detected - amplicon,Amplicon
+S_237,47.91,-122.1,Snohomish,WA,United States,AAB detected - amplicon,Amplicon
+S_238,36,-78.92,Durham,NC,United States,AAB detected - amplicon,Amplicon
+S_239,33.97,-118.4,Los Angeles,CA,United States,AAB detected - amplicon,Amplicon
+S_24,42.92,-85.9,Hudsonville,MI,United States,AAB detected - amplicon,Amplicon
+S_240,44.32,-89.29,Almond,WI,United States,AAB detected - amplicon,Amplicon
+S_241,36.98,-121.92,Aptos,CA,United States,AAB detected - amplicon,Amplicon
+S_242,41.8,-87.58,Chicago,IL,United States,AAB not detected - amplicon,
+S_243,35.74,-84.63,Ten Mile,TN,United States,AAB not detected - amplicon,
+S_244,32.74,-117.14,San Diego,CA,United States,AAB not detected - amplicon,
+S_245,33.08,-117.24,Carlsbad,CA,United States,AAB not detected - amplicon,
+S_246,37.23,-121.95,Los Gatos,CA,United States,AAB detected - amplicon,Amplicon
+S_247,39.52,-119.79,Reno,NV,United States,AAB not detected - amplicon,
+S_248,45.49,-122.59,Portland,OR,United States,AAB not detected - amplicon,
+S_249,45.51,-122.58,Portland,OR,United States,AAB not detected - amplicon,
+S_250,35.79,-78.63,Raleigh,NC,United States,AAB not detected - amplicon,
+S_251,34.11,-84.3,Alpharetta,GA,United States,AAB not detected - amplicon,
+S_252,39.67,-104.94,Denver,CO,United States,AAB not detected - amplicon,
+S_253,39.91,-86.31,Indianapolis,IN,United States,AAB detected - amplicon,Amplicon
+S_254,40.12,-75.14,Abington,PA,United States,AAB not detected - amplicon,
+S_256,37.34,-122,Santa Clara,CA,United States,AAB detected - amplicon,Amplicon
+S_257,-37.63,145.18,Hurstbridge,Victoria,Australia,AAB detected - amplicon,Amplicon
+S_258,35.88,-106.31,Los Alamos,NM,United States,AAB not detected - amplicon,
+S_259,40.5,-111.86,Draper,UT,United States,AAB not detected - amplicon,
+S_26,33.67,-111.92,Scottsdale,AZ,United States,AAB not detected - amplicon,
+S_260,44.6,-123.3,Corvallis,OR,United States,AAB not detected - amplicon,
+S_261,42.32,-72.63,Northampton,MA,United States,AAB detected - amplicon,Amplicon
+S_262,33.78,-84.37,Atlanta,GA,United States,AAB detected - amplicon,Amplicon
+S_263,40.57,-109.92,Whiterocks,UT,United States,AAB detected - amplicon,Amplicon
+S_264,42.59,-70.77,Manchester,MA,United States,AAB not detected - amplicon,
+S_265,40.62,-111.51,Park City,UT,United States,AAB not detected - amplicon,
+S_266,39.72,-105.21,Golden,CO,United States,AAB not detected - amplicon,
+S_267,57.05,-135.34,Sitka,AK,United States,AAB not detected - amplicon,
+S_268,-36.61,146.21,Upper Lurg,Victoria,Australia,AAB not detected - amplicon,
+S_269,47.64,-122.35,Seattle,WA,United States,AAB detected - amplicon,Amplicon
+S_27,31.66,-110.66,Sonoita,AZ,United States,AAB not detected - amplicon,
+S_270,44.85,-93.47,Eden Prairie,MN,United States,AAB not detected - amplicon,
+S_271,44.72,-81.12,Georgian Bluffs,Ontario,Canada,AAB not detected - amplicon,
+S_272,59.56,9.27,Notodden,Telemark,Norway,AAB detected - amplicon,Amplicon
+S_273,42.99,-72.66,Brattleboro,VT,United States,AAB detected - amplicon,Amplicon
+S_274,49.8,-125.05,Merville,British Columbia,Canada,AAB not detected - amplicon,
+S_275,35.98,-78.9,Durham,NC,United States,AAB detected - amplicon,Amplicon
+S_276,41.82,-71.4,Providence,RI,United States,AAB not detected - amplicon,
+S_277,51.51,-0.09,London,London,United Kingdom,AAB detected - amplicon,Amplicon
+S_278,42.91,-78.72,Depew,NY,United States,AAB detected - amplicon,Amplicon
+S_279,39.7,-84.11,Kettering,OH,United States,AAB not detected - amplicon,
+S_28,36.01,-78.9,Durham,NC,United States,AAB not detected - amplicon,
+S_281,40.7,-74.57,Basking Ridge,NJ,United States,AAB not detected - amplicon,
+S_282,38.6,-90.3,Saint louos,MO,United States,AAB not detected - amplicon,
+S_283,28.21,-82.7,New port richey,FL,United States,AAB not detected - amplicon,
+S_284,47.6,-122.31,Seattle,WA,United States,AAB detected - amplicon,Amplicon
+S_286,53.34,-6.29,Dublin,Dublin,Ireland,AAB not detected - amplicon,
+S_287,44.91,-93.1,West Saint Paul,MN,United States,AAB detected - amplicon,Amplicon
+S_288,45.65,-122.68,Vancouver,WA,United States,AAB not detected - amplicon,
+S_29,35.82,-78.71,Raleigh,NC,United States,AAB detected - amplicon,Amplicon
+S_290,47.67,-111.77,Power,MT,United States,AAB detected - amplicon,Amplicon
+S_291,42.74,-124.49,Port Orford,OR,United States,AAB detected - amplicon,Amplicon
+S_292,34.68,-118.14,Lancaster,CA,United States,AAB detected - amplicon,Amplicon
+S_294,47.85,-122.2,Bothell,WA,United States,AAB not detected - amplicon,
+S_296,45.39,-75.75,Ottawa,Ontario,Canada,AAB not detected - amplicon,
+S_299,42.39,-71.17,Belmont,MA,United States,AAB not detected - amplicon,
+S_3,36.93,-76.19,Norfolk,VA,United States,AAB not detected - amplicon,
+S_300,41.1,-73.46,Norwalk ,CT,United States,AAB not detected - amplicon,
+S_302,47.71,9.27,Meersburg,BadenWurttemberg,Germany,AAB detected - amplicon,Amplicon
+S_305,51.48,-0.39,Heston ,Middlesex,United Kingdom,AAB not detected - amplicon,
+S_306,34.41,-112.6,Wilhoit,AZ,United States,AAB not detected - amplicon,
+S_307,42.37,-71.1,Cambridge,MA,United States,AAB not detected - amplicon,
+S_308,41.78,-70,Orleans,MA,United States,AAB not detected - amplicon,
+S_309,43.66,-79.46,Toronto,Ontario,Canada,AAB not detected - amplicon,
+S_31,41.61,-93.68,Des Moines,IA,United States,AAB not detected - amplicon,
+S_310,44.83,-68.78,Bangor,ME,United States,AAB not detected - amplicon,
+S_311,40.84,-73.94,New York,NY,United States,AAB not detected - amplicon,
+S_312,43.82,-72.2,East Thetford,VT,United States,AAB detected - amplicon,Amplicon
+S_313,40.67,-73.99,Brooklyn,NY,United States,AAB detected - amplicon,Amplicon
+S_314,46.5,-0.06,Menigoute,NA,France,AAB not detected - amplicon,
+S_315,42.33,-73.64,Ghent,NY,United States,AAB detected - amplicon,Amplicon
+S_316,39.2,-76.85,Columbia,MD,United States,AAB detected - amplicon,Amplicon
+S_317,37.23,-121.87,San Jose,CA,United States,AAB not detected - amplicon,
+S_318,41.31,-72.93,New Haven,CT,United States,AAB not detected - amplicon,
+S_319,41.98,-87.72,Chicago,IL,United States,AAB not detected - amplicon,
+S_32,34.45,-119.74,Santa Barbara,CA,United States,AAB not detected - amplicon,
+S_321,33.96,-117.63,Chino,CA,United States,AAB not detected - amplicon,
+S_322,43.77,-91.2,La Crosse,WI,United States,AAB not detected - amplicon,
+S_323,45.51,-122.57,Portland,OR,United States,AAB not detected - amplicon,
+S_325,38.31,-122.68,Penngrove,CA,United States,AAB not detected - amplicon,
+S_327,32.86,-117.23,La Jolla,CA,United States,AAB not detected - amplicon,
+S_328,37.23,-80.41,Blacksburg,VA,United States,AAB detected - amplicon,Amplicon
+S_329,43.8,-69.97,Harpswell,ME,United States,AAB not detected - amplicon,
+S_33,40.81,-74.25,West Orange,NJ,United States,AAB not detected - amplicon,
+S_331,46.88,-124.12,Westport,WA,United States,AAB not detected - amplicon,
+S_333,42.31,-71.11,Boston,MA,United States,AAB not detected - amplicon,
+S_334,44.83,-93.56,Chanhassen,MN,United States,AAB not detected - amplicon,
+S_335,40.1,-105.02,Erie,CO,United States,AAB not detected - amplicon,
+S_336,43.44,-112.02,Idaho Falls,ID,United States,AAB not detected - amplicon,
+S_338,47.58,-122.39,Seattle,WA,United States,AAB detected - amplicon,Amplicon
+S_339,-35.35,149.04,Canberra,NA,Australia,AAB not detected - amplicon,
+S_34,43.68,-84.21,Midland,MI,United States,AAB not detected - amplicon,
+S_340,-35.35,149.04,Canberra,Australian Capital Territory,Australia,AAB not detected - amplicon,
+S_341,41.75,-111.84,Logan,UT,United States,AAB not detected - amplicon,
+S_342,44.75,-78.05,Apsley,Ontario,Canada,AAB detected - amplicon,Amplicon
+S_343,35.78,-78.66,Raleigh,NC,United States,AAB not detected - amplicon,
+S_344,39.82,-84.93,Richmond,IN,United States,AAB detected - amplicon,Amplicon
+S_346,51.84,5.88,Nijmegen,Gelderland,Netherlands,AAB detected - amplicon,Amplicon
+S_347,49.32,-122.96,North Vancouver ,British Columbia,Canada,AAB not detected - amplicon,
+S_348,49.32,-122.96,North Vancouver ,British Columbia,Canada,AAB detected - amplicon,Amplicon
+S_35,35.96,-78.94,Durham,NC,United States,AAB detected - amplicon,Amplicon
+S_350,30.51,-86.47,Niceville,FL,United States,AAB not detected - amplicon,
+S_351,40.88,-73.03,Middle Island,NY,United States,AAB not detected - amplicon,
+S_352,42.05,-80.18,Fairview,PA,United States,AAB not detected - amplicon,
+S_353,40.77,-73.95,New York,NY,United States,AAB not detected - amplicon,
+S_354,45.90152,-109.813696,NA,NA,NA,AAB not detected - amplicon,
+S_355,42.81,-71.36,Londonderry,NH,United States,AAB not detected - amplicon,
+S_356,39.31,-77.56,Jefferson,MD,United States,AAB not detected - amplicon,
+S_357,33.24,-111.67,Queen Creek,AZ,United States,AAB not detected - amplicon,
+S_358,35.78,-78.65,Raleigh,NC,United States,AAB detected - amplicon,Amplicon
+S_359,51.53,-0.21,London,London,United Kingdom,AAB not detected - amplicon,
+S_36,28.09,-80.57,Indialantic,FL,United States,AAB not detected - amplicon,
+S_361,14.95,102.02,Nakhon Ratchasima,Nakhon Ratchasima,Thailand,AAB detected - amplicon,Amplicon
+S_362,39.98,-75.25,Philadelphia,PA,United States,AAB detected - amplicon,Amplicon
+S_363,42.25,-71.52,Hopkinton,MA,United States,AAB not detected - amplicon,
+S_364,-37.72,145.16,Eltham,Victoria,Australia,AAB detected - amplicon,Amplicon
+S_365,46.24,-63.12,Charlottetown,Prince Edward Island,Canada,AAB not detected - amplicon,
+S_368,45.49,-122.6,Portland ,OR,United States,AAB not detected - amplicon,
+S_369,46.63,-120.68,Yakima,WA,United States,AAB not detected - amplicon,
+S_37,40.9,-81.51,Clinton,OH,United States,AAB not detected - amplicon,
+S_372,33.87,-84.14,Lilburn,GA,United States,AAB not detected - amplicon,
+S_373,35.27,-111.49,Flagstaff,AZ,United States,AAB not detected - amplicon,
+S_374,35.66,-105.93,Santa Fe,NM,United States,AAB detected - amplicon,Amplicon
+S_375,35.66,-105.93,Santa Fe,NM,United States,AAB detected - amplicon,Amplicon
+S_377,44.42,-109.26,Cody,WY,United States,AAB not detected - amplicon,
+S_378,47.59,-122.31,Seattle,WA,United States,AAB detected - amplicon,Amplicon
+S_379,35.81,-78.59,Raleigh,NC,United States,AAB detected - amplicon,Amplicon
+S_38,40.94,-76.87,Lewisburg,PA,United States,AAB not detected - amplicon,
+S_380,42.7,-73.86,Albany,NY,United States,AAB not detected - amplicon,
+S_381,60.71,-135.11,Whitehorse,Yukon,Canada,AAB not detected - amplicon,
+S_382,44.63,-123.12,Albany,OR,United States,AAB detected - amplicon,Amplicon
+S_383,48.12,-114.46,Kila,MT,United States,AAB detected - amplicon,Amplicon
+S_384,39.86,-86.26,Indianapolis,IN,United States,AAB detected - amplicon,Amplicon
+S_385,38.56,-121.72,Davis,CA,United States,AAB not detected - amplicon,
+S_386_2,-33.99,151.07,Oatley,New South Wales,Australia,AAB detected - amplicon,Amplicon
+S_387,42.38,-71.1,Somerville,MA,United States,AAB detected - amplicon,Amplicon
+S_388,33.97,-118.39,Los Angeles,CA,United States,AAB detected - amplicon,
+S_389,37.91,-122.38,Richmond,CA,United States,AAB detected - amplicon,
+S_39,43.68,-79.32,Toronto,Ontario,Canada,AAB detected - amplicon,
+S_390,43.12,-89.36,Madison,WI,United States,AAB not detected - amplicon,
+S_391,45.47,-122.75,Portland,OR,United States,AAB detected - amplicon,Amplicon
+S_392,36.02,-78.91,Durham,NC,United States,AAB not detected - amplicon,
+S_393,40.64,-74.56,Warren,NJ,United States,AAB not detected - amplicon,
+S_394,35.86,-78.69,Raleigh,NC,United States,AAB not detected - amplicon,
+S_395,37.42,-122.1,Palo Alto,CA,United States,AAB detected - amplicon,Amplicon
+S_396,43.66,-79.46,Toronto,Ontario,Canada,AAB not detected - amplicon,
+S_397,38.79,-77.28,Burke,VA,United States,AAB detected - amplicon,Amplicon
+S_398,47.71,-122.3,Seattle,WA,United States,AAB detected - amplicon,Amplicon
+S_399,42.83,-83.19,Oxford,MI,United States,AAB detected - amplicon,Amplicon
+S_4,42.29,-72.7,Florence,MA,United States,AAB not detected - amplicon,
+S_40,27.05,-82.13,north port,FL,United States,AAB not detected - amplicon,
+S_400,37,-121.85,Aptos,CA,United States,AAB not detected - amplicon,
+S_401,47.66,-122.34,Seattle,WA,United States,AAB not detected - amplicon,
+S_402,40.38,-86.88,Lafayette,IN,United States,AAB detected - amplicon,Amplicon
+S_403,40.53,-75.32,Coopersburg,PA,United States,AAB detected - amplicon,Amplicon
+S_404,37.25,-121.88,San Jose,CA,United States,AAB detected - amplicon,Amplicon
+S_405,39.12,-84.6,Cinncinnati,OH,United States,AAB not detected - amplicon,
+S_406,49.88,-97.19,Winnipeg,Manitoba,Canada,AAB detected - amplicon,Amplicon
+S_407,41.68,-69.98,Chatham,MA,United States,AAB not detected - amplicon,
+S_409,37.69,-122.08,Castro Valley,CA,United States,AAB not detected - amplicon,
+S_41,35.37,-83.57,Almond,NC,United States,AAB not detected - amplicon,
+S_410,39.07,-77.28,Gaithersburg,MD,United States,AAB not detected - amplicon,
+S_411,35.95,-84.19,Knoxville ,TN,United States,AAB detected - amplicon,Amplicon
+S_412,41.84,-72.37,Tolland,CT,United States,AAB not detected - amplicon,
+S_413,35.44,-80.88,Huntersville,NC,United States,AAB not detected - amplicon,
+S_414,41.31,-105.59,Laramie,WY,United States,AAB not detected - amplicon,
+S_415,37.65,-122.42,San Francisco,CA,United States,AAB detected - amplicon,Amplicon
+S_417,45.5,-73.58,Montreal,Quebec,Canada,AAB detected - amplicon,Amplicon
+S_418,39.75,-121.82,Chico,CA,United States,AAB not detected - amplicon,
+S_419,45.65,13.76,Trieste,Italy,Italy,AAB detected - amplicon,Amplicon
+S_42,40.18,-105.15,Longmont,CO,United States,AAB not detected - amplicon,
+S_420,45.87,-123.96,Cannon Beach,OR,United States,AAB not detected - amplicon,
+S_421,44.39,-68.21,Bar Harbor,ME,United States,AAB not detected - amplicon,
+S_422,44.39,-68.21,Bar Harbor,ME,United States,AAB detected - amplicon,Amplicon
+S_424,41.14,-104.83,Cheyenne,WY,United States,AAB not detected - amplicon,
+S_425,40.73,-73.99,New York,NY,United States,AAB not detected - amplicon,
+S_428,44.26,-68.23,Islesford,ME,United States,AAB not detected - amplicon,
+S_429,33.44,-111.64,Mesa,AZ,United States,AAB not detected - amplicon,
+S_43,45.55,-122.58,Portland,OR,United States,AAB detected - amplicon,Amplicon
+S_430,40.04,-105.04,Erie,CO,United States,AAB not detected - amplicon,
+S_431,37.99,-121.36,Stockton,CA,United States,AAB not detected - amplicon,
+S_432,41.9,-87.8,Oak Park,IL,United States,AAB not detected - amplicon,
+S_433,47.92,-122.42,Clinton,WA,United States,AAB not detected - amplicon,
+S_434,36.09,-79.8,Greensboro,NC,United States,AAB detected - amplicon,Amplicon
+S_435,34.3,-119.29,Ventura,CA,United States,AAB detected - amplicon,Amplicon
+S_436,45.83,13.5,Ronchi dei Legionari,NA,Italy,AAB not detected - amplicon,
+S_437,38.31,-77.22,King George,VA,United States,AAB detected - amplicon,Amplicon
+S_438,44.57,-123.98,Toledo,OR,United States,AAB detected - amplicon,Amplicon
+S_44,40.76,-111.86,Salt Lake City,UT,United States,AAB not detected - amplicon,
+S_440,38.46,-77.46,Stafford,VA,United States,AAB detected - amplicon,Amplicon
+S_441,39.33,-76.61,Baltimore,MD,United States,AAB not detected - amplicon,
+S_442,42.44,-76.51,Ithaca,NY,United States,AAB detected - amplicon,Amplicon
+S_443,43.07,-89.44,Madison,WI,United States,AAB not detected - amplicon,
+S_444,32.64,-117.06,Chula Vista,CA,United States,AAB not detected - amplicon,
+S_446,37.59,-122.47,Pacifica,CA,United States,AAB not detected - amplicon,
+S_447,44.66,-123.23,Corvallis,OR,United States,AAB not detected - amplicon,
+S_448,32.34,-92.7,Quitman,LA,United States,AAB detected - amplicon,Amplicon
+S_449,45.38,-74.26,Rigaud,Quebec,Canada,AAB not detected - amplicon,
+S_450,39.84,-86.14,Indianapolis,IN,United States,AAB detected - amplicon,Amplicon
+S_451,40.71,-74.37,Summit,NJ,United States,AAB detected - amplicon,Amplicon
+S_452,39.75,-121.82,Chico ,CA,United States,AAB detected - amplicon,Amplicon
+S_453,32.95,-96.82,Dallas,TX,United States,AAB not detected - amplicon,
+S_455,31.55,-110.37,Fort Huachuca,AZ,United States,AAB not detected - amplicon,
+S_457,40.71,-111.82,Salt Lake City ,UT,United States,AAB not detected - amplicon,
+S_458,52.53,4.7,Uitgeest,North Holland,Netherlands,AAB detected - amplicon,Amplicon
+S_459,-34.94,138.74,Ashton,South Australia ,Australia,AAB detected - amplicon,Amplicon
+S_46,46.19,-123.82,Astoria,OR,United States,AAB detected - amplicon,Amplicon
+S_460,37.72,-122.13,San Leandro,CA,United States,AAB detected - amplicon,Amplicon
+S_461,45.55,-73.57,Montreal,Quebec,Canada,AAB not detected - amplicon,
+S_462,-33.7,151.11,Hornsby,New South Wales,Australia,AAB not detected - amplicon,
+S_463,60.29,-134.28,Tagish,Yukon,Canada,AAB detected - amplicon,Amplicon
+S_465,59.28,18.08,Enskede,NA,Sweden,AAB detected - amplicon,Amplicon
+S_466,-33.48,149.49,Bathurst,New South Wales,Australia,AAB detected - amplicon,Amplicon
+S_467,-33.88,151.21,Richmond,Tasmania,Australia,AAB detected - amplicon,Amplicon
+S_468,35.41,-120.87,Morro Bay,CA,United States,AAB detected - amplicon,Amplicon
+S_469,40.84,-73.94,New York,NY,United States,AAB not detected - amplicon,
+S_470,37.64,-122.48,Pacifica,CA,United States,AAB detected - amplicon,Amplicon
+S_471,51.56,-0.13,London,London,United Kingdom,AAB not detected - amplicon,
+S_473,38.55,-121.73,David,CA,United States,AAB detected - amplicon,Amplicon
+S_474,30.71,-97.73,Georgetown,TX,United States,AAB detected - amplicon,Amplicon
+S_475,40.72,-73.95,Brooklyn,NY,United States,AAB detected - amplicon,Amplicon
+S_476,53.37,-3.18,Wirral,Merseyside,United Kingdom,AAB detected - amplicon,Amplicon
+S_477,34.26,-118.33,Sunland,CA,United States,AAB detected - amplicon,Amplicon
+S_478,47.49,19,Budapest,NA,Hungary,AAB detected - amplicon,Amplicon
+S_479,-33.61,149.14,Carcoar,New South Wales,Australia,AAB not detected - amplicon,
+S_48,43.03,-76.12,Syracuse,NY,United States,AAB not detected - amplicon,
+S_480,-33.88,151.21,Darlinghurst,New South Wales,Australia,AAB not detected - amplicon,
+S_481,47.58,-122.15,Bellevue,WA,United States,AAB detected - amplicon,Amplicon
+S_482,47.58,-122.15,Bellevue,WA,United States,AAB not detected - amplicon,
+S_483,47.58,-122.15,Bellevue,WA,United States,AAB not detected - amplicon,
+S_485,43.16,-78.68,Lockport,NY,United States,AAB not detected - amplicon,
+S_486,37.87,-122.31,Berkeley ,CA,United States,AAB detected - amplicon,Amplicon
+S_487,38.94,-77.02,Washington,DC,United States,AAB not detected - amplicon,
+S_488,36.07,-115.05,Henderson,NV,United States,AAB not detected - amplicon,
+S_489,30.41,-97.76,Austin,TX,United States,AAB detected - amplicon,Amplicon
+S_49,40.02,-75.23,Bala Cynwyd,PA,United States,AAB not detected - amplicon,
+S_490,35.18,-83.39,Franklin,NC,United States,AAB detected - amplicon,Amplicon
+S_491,43.44,-72.89,East Wallingford,VT,United States,AAB not detected - amplicon,
+S_492,40.68,-74,Brooklyn,NY,United States,AAB not detected - amplicon,
+S_493,41.89,-87.64,Chicago,IL,United States,AAB not detected - amplicon,
+S_494,42.33,-78.64,Ellicottville,NY,United States,AAB not detected - amplicon,
+S_495,37.58,-122.37,Burlingame,CA,United States,AAB not detected - amplicon,
+S_496,43.72,-79.41,Toronto,Ontario,Canada,AAB not detected - amplicon,
+S_497,34.03,-118.38,Culver City,CA,United States,AAB detected - amplicon,Amplicon
+S_498,35.56,-82.51,Asheville,NC,United States,AAB not detected - amplicon,
+S_5,47.68,-122.29,Seattle,WA,United States,AAB detected - amplicon,Amplicon
+S_50,43.89,-71.58,Thornton,NH,United States,AAB not detected - amplicon,
+S_501,29.75,-95.32,Houston,TX,United States,AAB not detected - amplicon,
+S_502,35.9,-79.06,Apex,NC,United States,AAB detected - amplicon,Amplicon
+S_504,34.26,-118.61,Chatsworth,CA,United States,AAB not detected - amplicon,
+S_505,45.55,-73.69,Laval,Quebec,Canada,AAB not detected - amplicon,
+S_506,57.81,-152.35,Kodiak,AK,United States,AAB not detected - amplicon,
+S_507,38.92,-77.05,Washington,DC,United States,AAB detected - amplicon,Amplicon
+S_508,28.06,-82.49,Tampa,FL,United States,AAB not detected - amplicon,
+S_509,35.18,-83.39,Franklin,NC,United States,AAB detected - amplicon,Amplicon
+S_51,38.93,-77.03,Washington,DC,United States,AAB detected - amplicon,Amplicon
+S_510,39.72,-105.14,Lakewood ,CO,United States,AAB not detected - amplicon,
+S_511,35.41,-76.66,Belhaven,NC,United States,AAB not detected - amplicon,
+S_512,40.97,-81.64,Akron,OH,United States,AAB detected - amplicon,Amplicon
+S_514,41.05,-85.17,Fort Wayne,IN,United States,AAB detected - amplicon,Amplicon
+S_515,40.8,-73.97,New York,NY,United States,AAB not detected - amplicon,
+S_516,43.06,-88.1,Brookfield,WI,United States,AAB not detected - amplicon,
+S_517,49.27,-123.18,Vancouver,British Columbia,Canada,AAB detected - amplicon,Amplicon
+S_518,49.27,-123.18,Vancouver,British Columbia,Canada,AAB detected - amplicon,Amplicon
+S_519,47.63,-122.5,Bainbridge Island,WA,United States,AAB not detected - amplicon,
+S_52,38.88,-77.02,Washington,DC,United States,AAB not detected - amplicon,
+S_520,44.89,-89.67,Wausau,WI,United States,AAB not detected - amplicon,
+S_521,-40.68,172.68,Collingwood,Tasman,New Zealand,AAB detected - amplicon,Amplicon
+S_522,35.8,-79.23,Pittsboro,NC,United States,AAB detected - amplicon,Amplicon
+S_523,39.27,-74.58,Ocean City,NJ,United States,AAB not detected - amplicon,
+S_524,43.36,-110.72,Jackson,WY,United States,AAB detected - amplicon,Amplicon
+S_525,37.75,-122.41,San Francisco,CA,United States,AAB not detected - amplicon,
+S_526,39.35,-123.38,Willits,CA,United States,AAB detected - amplicon,Amplicon
+S_527,39.03,-76.99,Silver Spring,MD,United States,AAB not detected - amplicon,
+S_528,34,-84.19,John's Creek,GA,United States,AAB detected - amplicon,Amplicon
+S_529,52.09,5.12,Utrecht,Utrecht,Netherlands,AAB detected - amplicon,Amplicon
+S_530,51.51,-0.24,London,London,United Kingdom,AAB not detected - amplicon,
+S_531,48.88,2.34,Paris,NA,France,AAB detected - amplicon,Amplicon
+S_533,38.6,-90.25,St. Louis,MO,United States,AAB detected - amplicon,Amplicon
+S_534,35.61,-82.35,Black Mountain,NC,United States,AAB not detected - amplicon,
+S_535,38.81,-104.84,Colorado Springs,CO,United States,AAB not detected - amplicon,
+S_536,53.82,-1.78,"Shipley, Bradford",West Yorkshire,United Kingdom,AAB detected - amplicon,Amplicon
+S_537,39.39,-76.58,Baltimore,MD,United States,AAB detected - amplicon,Amplicon
+S_538,48.42,-123.31,Victoria,British Columbia,Canada,AAB not detected - amplicon,
+S_539,45.5,-122.53,Portland,OR,United States,AAB detected - amplicon,Amplicon
+S_54,39.14,-84.37,Mariemont,OH,United States,AAB detected - amplicon,Amplicon
+S_540,26.38,-80.09,Boca Raton,FL,United States,AAB not detected - amplicon,
+S_541,37.8,-122.21,Oakland,CA,United States,AAB not detected - amplicon,
+S_542,41.84,-71.4,Providence,RI,United States,AAB not detected - amplicon,
+S_543,38.55,-121.76,Davis,CA,United States,AAB not detected - amplicon,
+S_544,44.6,-123.41,Philomath,OR,United States,AAB not detected - amplicon,
+S_545,35.21,-80.86,Charlotte,NC,United States,AAB not detected - amplicon,
+S_547,42.44,-76.69,Trumansburg,NY,United States,AAB detected - amplicon,Amplicon
+S_548,37.84,-122.27,Oakland,CA,United States,AAB not detected - amplicon,
+S_549,42.46,-83.38,Farmington,MI,United States,AAB not detected - amplicon,
+S_55,48,-122.05,Lake Stevens,WA,United States,AAB not detected - amplicon,
+S_550,34.05,-118.44,Los Angeles,CA,United States,AAB detected - amplicon,Amplicon
+S_551,38.36,-87.57,Princeton,IN,United States,AAB not detected - amplicon,
+S_552,-27.55,152.91,Westlake,Queensland,Australia,AAB not detected - amplicon,
+S_553,40.45,-3.71,Madrid,NA,Spain,AAB not detected - amplicon,
+S_554,64.46,11.79,Skage,Namdalen,Norway,AAB not detected - amplicon,
+S_555,37.77,-122.44,San Francisco,CA,United States,AAB not detected - amplicon,
+S_556,37.78,-122.43,San Francisco,CA,United States,AAB not detected - amplicon,
+S_557,-37.65,145.53,Healesville,Victoria,Australia,AAB not detected - amplicon,
+S_558,38.09,-122.17,Benicia,CA,United States,AAB not detected - amplicon,
+S_56,49.16,-121.96,Chilliwack,British Columbia,Canada,AAB detected - amplicon,Amplicon
+S_560,60.71,-135.09,Whitehorse,Yukon,Canada,AAB not detected - amplicon,
+S_57,35.92,-86.01,Woodbury,TN,United States,AAB not detected - amplicon,
+S_58,44.01,-70.06,Lisbon Falls,ME,United States,AAB detected - amplicon,Amplicon
+S_59,40.76,-73.95,Roosevelt Island ,NY,United States,AAB not detected - amplicon,
+S_6,46.05,-118.34,Walla Walla,WA,United States,AAB detected - amplicon,Amplicon
+S_60,33.99,-118.43,Los Angeles,CA,United States,AAB not detected - amplicon,
+S_61,37.33,-121.92,San Jose,CA,United States,AAB detected - amplicon,Amplicon
+S_62,37.25,-75.94,Cape Charles,VA,United States,AAB not detected - amplicon,
+S_63,34,-118.4,Culver City,CA,United States,AAB detected - amplicon,Amplicon
+S_64,35.2,-111.57,Flagstaff,AZ,United States,AAB detected - amplicon,Amplicon
+S_65,38.95,-104.75,Colorado Springs,CO,United States,AAB detected - amplicon,Amplicon
+S_66,36.15,-86.8,Nashville,TN,United States,AAB not detected - amplicon,
+S_67,42.57,-71.43,Westford,MA,United States,AAB not detected - amplicon,
+S_68,37.81,-122.23,Oakland,CA,United States,AAB not detected - amplicon,
+S_69,42.35,-71.06,Boston,MA,United States,AAB not detected - amplicon,
+S_7,43.93,-69.94,Topsham,ME,United States,AAB not detected - amplicon,
+S_70,40.2,-105.54,Allenspark,CO,United States,AAB detected - amplicon,Amplicon
+S_71,41.15,-96.01,Papillion,NE,United States,AAB detected - amplicon,Amplicon
+S_72,35.81,-78.69,Raleigh ,NC,United States,AAB not detected - amplicon,
+S_73,30.57,-96.3,College Station,TX,United States,AAB not detected - amplicon,
+S_74,37.8,-122.21,Oakland,CA,United States,AAB not detected - amplicon,
+S_75,33.46,-88.82,Starkville,MS,United States,AAB detected - amplicon,Amplicon
+S_76,41.31,-105.59,Laramie,WY,United States,AAB not detected - amplicon,
+S_77,44.48,-73.21,Burlington,VT,United States,AAB not detected - amplicon,
+S_78,39.1,-77.24,n potomac,MD,United States,AAB detected - amplicon,Amplicon
+S_79,33.73,-84.37,Atlanta,GA,United States,AAB not detected - amplicon,
+S_8,38.44,-122.86,Sebastopol,CA,United States,AAB detected - amplicon,Amplicon
+S_80,44.03,-123.06,Eugene,OR,United States,AAB not detected - amplicon,
+S_81,38.59,-122.59,Calistoga,CA,United States,AAB detected - amplicon,Amplicon
+S_82,40.84,-83.27,Upper Sandusky,OH,United States,AAB detected - amplicon,Amplicon
+S_83,32.37,-86.27,Montgomery,AL,United States,AAB not detected - amplicon,
+S_84,20.82,-156.29,Makawao,HI,United States,AAB not detected - amplicon,
+S_85,41.24,-95.96,Omaha,NE,United States,AAB detected - amplicon,Amplicon
+S_86,44.71,-72.94,East Fairfield,VT,United States,AAB detected - amplicon,Amplicon
+S_87,44.93,-93.16,Saint Paul,MN,United States,AAB not detected - amplicon,
+S_88,35.94,-78.96,Durham,NC,United States,AAB not detected - amplicon,
+S_89,43.67,-70.3,Portland,ME,United States,AAB not detected - amplicon,
+S_9,32.85,-117.2,San Diego,CA,United States,AAB not detected - amplicon,
+S_90,42.31,-83.71,Ann Arbor,MI,United States,AAB detected - amplicon,Amplicon
+S_91,34.59,-112.5,Prescott,AZ,United States,AAB detected - amplicon,Amplicon
+S_92,37.79,-122.42,San Francisco,CA,United States,AAB not detected - amplicon,
+S_93,29.73,-95.4,Houston,TX,United States,AAB not detected - amplicon,
+S_94,34.66,-120.12,Los Olivos,CA,United States,AAB not detected - amplicon,
+S_95,40.53,-104.93,Windsor,CO,United States,AAB detected - amplicon,Amplicon
+S_96,42.14,-71.44,Framingham,MA,United States,AAB detected - amplicon,Amplicon
+S_97,33.78,-117.8,Santa Ana,CA,United States,AAB detected - amplicon,Amplicon
+S_98,40.8,-73.97,New York,NY,United States,AAB not detected - amplicon,
+S_99,39.54,-104.79,Parker,CO,United States,AAB not detected - amplicon,
+GCF_000379545.1,52.373169,4.89066,,,,AAB detected - amplicon,NCBI genome
+GCF_001580615.1,50.503887,4.469936,,,,AAB detected - amplicon,NCBI genome
+GCF_001580625.1,50.503887,4.469936,,,,AAB detected - amplicon,NCBI genome
+GCF_001580635.1,50.503887,4.469936,,,,AAB detected - amplicon,NCBI genome
+GCF_001580695.1,50.503887,4.469936,,,,AAB detected - amplicon,NCBI genome
+GCF_001580705.1,50.503887,4.469936,,,,AAB detected - amplicon,NCBI genome
+GCF_001580815.1,50.503887,4.469936,,,,AAB detected - amplicon,NCBI genome
+GCF_001581035.1,50.503887,4.469936,,,,AAB detected - amplicon,NCBI genome
+GCF_001581045.1,50.503887,4.469936,,,,AAB detected - amplicon,NCBI genome
+GCF_001581085.1,50.503887,4.469936,,,,AAB detected - amplicon,NCBI genome
+GCF_002153475.1,43.04794,-76.14745,,,,AAB detected - amplicon,NCBI genome
+GCF_002153685.1,43.04794,-76.14745,,,,AAB detected - amplicon,NCBI genome
+GCF_002153735.1,43.04794,-76.14745,,,,AAB detected - amplicon,NCBI genome
+GCF_002153775.1,43.04794,-76.14745,,,,AAB detected - amplicon,NCBI genome
+GCF_002409655.1,26.074301,119.296539,,,,AAB detected - amplicon,NCBI genome
+GCF_004302915.1,41.871941,12.56738,,,,AAB detected - amplicon,NCBI genome
+GCF_006539325.1,50.503887,4.469936,,,,AAB detected - amplicon,NCBI genome
+GCF_007989335.1,-6.59712,106.795219,,,,AAB detected - amplicon,NCBI genome
+GCF_007991375.1,20.593683,78.962883,,,,AAB detected - amplicon,NCBI genome
+GCF_007991395.1,40.39794,-8.1304,,,,AAB detected - amplicon,NCBI genome
+GCF_011516735.1,55.378052,-3.435973,,,,AAB detected - amplicon,NCBI genome
+GCF_011516875.1,50.503887,4.469936,,,,AAB detected - amplicon,NCBI genome
+GCF_011516935.1,15.870032,100.992538,,,,AAB detected - amplicon,NCBI genome
+GCF_014132135.1,35.689487,139.691711,,,,AAB detected - amplicon,NCBI genome
+GCF_017377745.1,9.13179,99.333618,,,,AAB detected - amplicon,NCBI genome
+GCF_021284605.1,33.538559,-112.183701,,,,AAB detected - amplicon,NCBI genome
+GCF_022643725.1,44.395561,-89.834518,,,,AAB detected - amplicon,NCBI genome
+GCF_024158385.1,50.503887,4.469936,,,,AAB detected - amplicon,NCBI genome
+GCF_024158465.1,50.503887,4.469936,,,,AAB detected - amplicon,NCBI genome
+GCF_024158475.1,50.503887,4.469936,,,,AAB detected - amplicon,NCBI genome
+GCF_024158505.1,50.503887,4.469936,,,,AAB detected - amplicon,NCBI genome
+GCF_030450005.1,31.58194,120.298042,,,,AAB detected - amplicon,NCBI genome
