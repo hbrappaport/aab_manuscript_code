@@ -1,4 +1,5 @@
-# networks - bacteria and protists
+
+# Co-occurrence networks
 install.packages("pacman")
 pacman::p_load(reshape2, dplyr, mctoolsr, ggplot2, vegan, ggraph, igraph, Hmisc)
 
@@ -66,7 +67,6 @@ all_edges <- cbind(all_pvalues, all_rho)
 
 # filter by strength and significance ## current is 0.5 with p < 0.00001
 all_edges <- filter(all_edges, all_edges$value < -0.2 | all_edges$value > 0.2)
-all_edges <- filter(all_edges, all_edges$value > 0.3) # filter by rho
 all_edges <- filter(all_edges, all_edges$pvalues < 0.001) # filter by pval
 all_nodes <- as.vector(unique(all_edges$Var1))
 
@@ -80,7 +80,6 @@ all_nodes <- as.vector(unique(all_edges$Var1))
  yeast_bac_edges_filt_wTax <- merge(yeast_bac_edges_filt_wTax, taxonomy, by  ="ASVID")
 # 
  aab_edges_filt_wTax_RED <- filter(yeast_bac_edges_filt_wTax,taxonomy5.y == "Acetobacteraceae" | taxonomy5.x == "Acetobacteraceae")
-# protist_edges_filt_wTax_RED <- filter(protist_edges_filt_wTax_RED,taxonomy1.y == "k__Bacteria")
  unique(aab_edges_filt_wTax_RED$Var1)
 
 # and clean up nodes
@@ -100,48 +99,4 @@ abu <- rowMeans(full_table)
 ASVID <- rownames(full_table)
 abu <- cbind(abu, ASVID)
 all_nodes_wTax <- merge(all_nodes_wTax, abu, by = "ASVID")
-write.csv(all_nodes_wTax, "~/Downloads/aab_nodes1.csv")
-write.csv(aab_edges_filt_wTax_RED, "~/Downloads/aab_edges3.csv")
-# summarize edges table to collapse bacterial obs by taxonomy
-t <- aab_edges_filt_wTax_RED %>%
-  group_by(taxonomy7.y) %>%
-  tally()
 
-t2 <- aab_edges_filt_wTax_RED %>%
-  group_by(Var1) %>%
-  tally()
-
-# test <- select(aab_edges_filt_wTax_RED, taxonomy6.y, Var1)
-# test2 <- test %>%
-#   group_by(taxonomy4.y, Var1) %>%
-#   tally()  
-
-t2$ASVID <- t2$Var1
-t2$Var1 <- NULL
-t2 <- merge(t2, taxonomy, by = "ASVID")
-#test3 <- filter(test2, taxonomy4.y != "o__")
-#test4 <- filter(test3, n > 2)
-
-## also try to reorder by bacteria?
-tax_select <- unique(select(aab_edges_filt_wTax_RED,  taxonomy4.y, taxonomy3.y,
-                            taxonomy2.y))
-test6 <- left_join(test4, tax_select, by= "taxonomy4.y")
-
-
-# save spreadsheet
-write.csv(t2, "~/Downloads/ASV_aab_corr_table.csv")
-
-###
-test6 <- read.csv("data_16S/ASV_bac_euk_corr_table_wlabels.csv")
-test6 <- transform(test6, label_BAC= reorder(label_BAC, order_bacteria))
-test6 <- transform(test6, label_EUK= reorder(label_EUK, -order_euk))
-
-ggplot(test6, aes(label_BAC, label_EUK)) + 
-  geom_tile(aes(fill=n)) + theme_classic() +
-  theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust=1)) +
-  scale_fill_gradient2(low = "white", mid = "#ffff99",
-                       high = "#ff0000", midpoint = -5)
-
-# write out files
-save(all_nodes_wTax, protist_edges_filt_wTax_RED, taxonomy, test6,
-     file = "data_16S/network_files.rda")
