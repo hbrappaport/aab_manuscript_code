@@ -1,0 +1,13 @@
+﻿sampleID,comm_type,condition,pH,CFU_Y,CFU_L,CFU_A
+YL2_C,control,control,5.964,0,0,0
+YL2_YL,YL,no_aab,4.84,1150,2070,0
+YL2_A1,A1,ghanensis,4.1,770,1970,1530
+YL2_A2,A2,malorum,3.83,930,1680,5600
+YL2_A3,A3,orientalis,3.74,730,2240,9000
+YL2_A4,A4,malorum,4.16,960,1730,5300
+YL2_A5,A5,acetobacter,4.04,740,2160,3000
+YL2_A6,A6,fabarum,3.83,420,2150,10300
+YL2_A7,A7,oxydans,3.56,390,1020,5400
+YL2_A8,A8,oryzifermentans,4.36,710,2590,700
+YL2_A9,A9,senegalensis,3.84,1780,2000,3900
+YL2_A10,A10,malorum,3.92,930,2400,4900
