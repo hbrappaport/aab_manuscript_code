@@ -4,9 +4,9 @@ install.packages("pacman")
 pacman::p_load(reshape2, dplyr, mctoolsr, ggplot2, vegan, ggraph, igraph, Hmisc)
 
 #load data
-tax_table_its_fp = '~/Downloads/sourdough_tab_ITS.txt'
-tax_table_16s_fp = '~/Downloads/sourdough_tab_16S.txt'
-map_fp = '~/Downloads/metadata500_starters.txt'
+tax_table_its_fp = "raw_data/sourdough_tab_ITS.txt"
+tax_table_16s_fp = "raw_data/sourdough_tab_16S.txt"
+map_fp = "raw_data/metadata500_starters.txt"
 input_ITS = load_taxa_table(tax_table_its_fp, map_fp)
 input_16S = load_taxa_table(tax_table_16s_fp, map_fp)
 
