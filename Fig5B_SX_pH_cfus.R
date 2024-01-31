@@ -42,44 +42,18 @@ ggplot(no_yeast_sparse, aes(y = pH, x = factor(comm_day, levels = c("C_Day2", "C
         panel.grid.minor.y = element_line(color = "light grey", linewidth = 0.1), panel.grid.major.y = element_line(color = "light grey", linewidth =  0.1))
 
 
-##ANOVA pH
-aov_pH = aov(pH~comm_type,data=pH_by_cfus)
-summary(aov_pH) 
-boxplot(pH~comm_type,data=pH_by_cfus)
-TukeyHSD(aov_pH)
-plot(TukeyHSD(aov_pH))
+##ANOVA 
+##pH YL2 day 4
+aov_pH_yl2 = aov(pH~comm_type,data=pH_YL2_day4)
+summary(aov_pH_yl2) 
+boxplot(pH~comm_type,data=pH_YL2_day4)
+TukeyHSD(aov_pH_yl2)
+plot(TukeyHSD(aov_pH_yl2))
 
-species_cfus = read.csv("~/Downloads/species_cfus.csv", sep = ",")
-aov_cfus = aov(CFUs~Sample, data = species_cfus)
-summary(aov_cfus)
-tukey_aov_cfus = TukeyHSD(aov_cfus)
-plot(TukeyHSD(aov_cfus))
-
-YL2_pH = read.csv("~/Downloads/YL2_pH.csv", sep = ",")
-
-YL2_pH_3 = YL2_pH
-
-YL2_pH_3$comm_type = factor(YL2_pH_3$comm_type, levels = c("control","YL", "A8", "A1", "A6", "A9", "A3", "A5", "A4",
-                                                           "A10", "A2", "A7"))
-
-
-#yeast only
-cfus_yeast = ggplot(pH_by_cfus, aes(color=condition, y=CFU_Y, x=pH, size = 0.5)) + 
-  theme_classic()+
-  geom_() 
-
-cfus_yeast
-
-#lab only
-cfus_lab = ggplot(pH_by_cfus, aes(color=condition, y=CFU_L, x=pH, size = 0.5)) + 
-  theme_classic()+
-  geom_point() 
-
-cfus_lab
-
-#aab only
-cfus_aab = ggplot(pH_by_cfus, aes(color=condition, y=CFU_A, x=pH, size = 0.5)) + 
-  theme_classic()+
-  geom_point() +
-  scale_y_log10()
-cfus_aab
+##all pH exclusing sparse yeast
+aov_pH_all = aov(pH~comm_type_full, data=no_yeast_sparse)
+summary(aov_pH_all)
+boxplot(pH~comm_type_full, data=no_yeast_sparse)
+pH_tukey_all = TukeyHSD(aov_pH_all)
+plot(TukeyHSD(aov_pH_all))
+pH_tukey_all <-as.data.frame(pH_tukey_all[1])
