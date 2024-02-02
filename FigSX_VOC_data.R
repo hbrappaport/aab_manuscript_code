@@ -40,6 +40,7 @@ voc <- convert_to_relative_abundances(voc)
 voc_reps[is.na(voc_reps)] <- 0
 sort(colSums(voc_reps))
 voc_reps <- convert_to_relative_abundances(voc_reps)
+voc_reps_abu_t <- pivot_longer(voc_reps, X)
 
 ## First look at within vs across reps
 dm.voc.avg <- calc_dm(voc)
@@ -52,7 +53,8 @@ ord_voc_reps <- calc_ordination(dm.voc.reps, ord_type = 'NMDS')
 ord_voc_reps$sampleID <- rownames(ord_voc_reps)
 ord_voc_reps <- cbind(ord_voc_reps, voc_meta$simpleOr)
 ord_voc_reps <- cbind(ord_voc_reps, voc_meta$simpleID)
-colnames(ord_voc_reps) <- c("MDS1", "MDS2", "sampleID", "simpleOR", "simpleID")
+ord_voc_reps <- cbind(ord_voc_reps, voc_meta$YL_A)
+colnames(ord_voc_reps) <- c("MDS1", "MDS2", "sampleID", "simpleOR", "simpleID", "YL_A")
 
 # find and add hulls
 hulls <- ddply(ord_voc_reps, "simpleOR", find_hull)
@@ -61,6 +63,8 @@ hulls <- ddply(ord_voc_reps, "simpleOR", find_hull)
 # And permanova for stats # R2 of sample origin explaining reps
 adonis2(formula = dm.voc.reps ~ simpleOR, data = ord_voc_reps, permutations = 999)
 
+#permanova for YL vs. all AAB samples
+adonis2(formula = dm.voc.reps ~ YL_A, data = ord_voc_reps, permutations = 999)
              
 ##dm for the VOCs
 voc_t = t(voc_reps)
@@ -88,6 +92,7 @@ voc_means$`rowMeans(voc)` <- NULL
 ###stats####
 
 voc_reps_groups = read.csv("~/Downloads/voc_reps_t.csv")
+voc_reps_groups_abu = convert_to_relative_abundances(voc_reps_groups)
 
 voc_reps_groups %>%
   do(tidy(kruskal.test(x= .$Sample, g = .$YL_A)))
@@ -95,3 +100,40 @@ voc_reps_groups %>%
 pwc <- voc_reps_groups %>% 
   dunn_test(Palmitic.Acid ~ Group, p.adjust.method = "bonferroni") 
 pwc
+
+
+voc_reps_groups_abu = read.csv("~/Downloads/voc_reps_highest_all_abu_t.csv")
+
+voc_reps_groups_filtered = read.csv("~/Downloads/voc_abu_filtered_one_perc.csv")
+
+## look at all, at the same time
+
+voc_yl_a_filt = voc_reps_groups_filtered %>%
+  select(-Group, -Sample) %>%
+  pivot_longer(!YL_A) %>%
+  group_by(name) %>%
+  do(tidy(kruskal.test(x= .$value, g = .$YL_A)))
+
+p_adj = stats::p.adjust(p = voc_yl_a_filt$p.value, method = "fdr")
+
+
+voc_yl_a_filt$p_adj = p_adj
+
+
+
+write.csv(voc_yl_a_filt, "~/Downloads/voc_yl_a_stats_filt.csv")
+
+voc_groups = voc_reps_groups_abu %>%
+  select(-YL_A, -Sample) %>%
+  pivot_longer(!Group) %>%
+  group_by(name) %>%
+  do(tidy(kruskal.test(x= .$value, g = .$Group))) %>%
+  mutate(p_adj = p.adjust(p.value, method = "bonferroni"))
+
+
+voc_out = voc_reps_groups_abu %>%
+  select(-Group, -Sample) %>%
+  pivot_longer(!YL_A) %>%
+  group_by(name) %>% 
+  do(tidy(kruskal.test(x= .$value, g = .$YL_A))) %>%
+  mutate(p_adj = p.adjust(pvalue, method = bonferroni))
