@@ -1,0 +1,28 @@
+﻿sample_id,asv_id,genome_obtained,genome_name,color
+S_11,ASV_12,TRUE,A_oryzifermentans,blue
+S_125,ASV_12,TRUE,A_pasteurianus,blue
+S_13,ASV_28,TRUE,A_senegalensis,blue
+S_199,ASV_12,TRUE,A_oryzifermentans,blue
+S_20,ASV_11,TRUE,A_cerevisiae,blue
+S_238,ASV_38,TRUE,A_okinawensis,blue
+S_24,ASV_12,TRUE,A_oryzifermentans,blue
+S_272,ASV_11,TRUE,A_malorum,blue
+S_275,ASV_282,TRUE,A_tropicalis,blue
+S_275,ASV_67,TRUE,G_oxydans B,blue
+S_328,ASV_11,TRUE,A_malorum,blue
+S_338,ASV_25,TRUE,A_fabarum,blue
+S_35,ASV_11,TRUE,A_malorum A,blue
+S_361,ASV_28,TRUE,A_senegalensis,blue
+S_364,ASV_67,TRUE,G_oxydans,blue
+S_398,ASV_12,TRUE,A_oryzifermentans,blue
+S_475,ASV_24,TRUE,A_syzygii,blue
+S_497,ASV_12,TRUE,A_pasteurianus,blue
+S_507,ASV_11,TRUE,A_malorum A,blue
+S_514,ASV_19,TRUE,A_orientalis,blue
+S_517,ASV_55,TRUE,A_sp. 517,blue
+S_521,ASV_19,TRUE,A_sp. 521,blue
+S_65,ASV_12,TRUE,A_oryzoeni,blue
+S_97,ASV_25,TRUE,A_fabarum,blue
+S_490,ASV_24,TRUE,A_malorum A,yellow
+S_154,ASV_12,TRUE,A_ghanensis,yellow
+S_130,ASV_11,TRUE,A_ghanensis,yellow
