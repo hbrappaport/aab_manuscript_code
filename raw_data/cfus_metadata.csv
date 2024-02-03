@@ -1,0 +1,12 @@
+﻿sampleID,comm_type,strain_treatment,avg_pH,CFU_Y,CFU_L,CFU_A,genome_id,type
+YL2_A3,A3,orientalis,3.74,730,2240,9000,G_514_1B_orientalis_prokka,AAB
+YL2_A2,A2,malorum,3.83,930,1680,5600,G_490_1A_malorum_prokka,AAB
+YL2_A9,A9,senegalensis,3.84,1780,2000,3900,G_361_1B_senegalensis_prokka,AAB
+YL2_A10,A10,malorum,3.92,930,2400,4900,G_507_1A_malorum_prokka,AAB
+YL2_A5,A5,acetobacter_sp517,4.04,740,2160,3000,G_517_1B_acetobacter_prokka,AAB
+YL2_A4,A4,malorum,4.16,960,1730,5300,G_272_1B_malorum_prokka,AAB
+YL2_A6,A6,fabarum,3.83,420,2150,10300,G_97_1A_fabarum_prokka,AAB
+YL2_A1,A1,ghanensis,4.1,770,1970,1530,G_154_1A_ghanensis_prokka,AAB
+YL2_A8,A8,oryzifermentans,4.36,710,2590,700,G_24_1A_oryzi_prokka,AAB
+YL2_A7,A7,oxydans,3.56,390,1020,5400,G_275_3_oxydans_prokka,AAB
+YL2_YL,YL,no_aab,4.84,1150,2070,0,NA,No_AAB

@@ -1,0 +1,11 @@
+,G_275_3_oxydans_prokka,G_514_1B_orientalis_prokka,G_361_1B_senegalensis_prokka,G_517_1B_acetobacter_prokka,G_272_1B_malorum_prokka,G_507_1A_malorum_prokka,G_490_1A_malorum_prokka,G_24_1A_oryzi_prokka,G_154_1A_ghanensis_prokka,G_97_1A_fabarum_prokka
+G_275_3_oxydans_prokka,0,0.174,0.274,0.478,0.596,0.358,0.268,0.798,0.444,0.268
+G_514_1B_orientalis_prokka,0.174,0,0.1,0.304,0.422,0.184,0.094,0.624,0.36,0.094
+G_361_1B_senegalensis_prokka,0.274,0.1,0,0.204,0.322,0.084,0.006,0.524,0.26,0.006
+G_517_1B_acetobacter_prokka,0.478,0.304,0.204,0,0.118,0.12,0.21,0.32,0.056,0.21
+G_272_1B_malorum_prokka,0.596,0.422,0.322,0.118,0,0.238,0.328,0.202,0.062,0.328
+G_507_1A_malorum_prokka,0.358,0.184,0.084,0.12,0.238,0,0.09,0.44,0.176,0.09
+G_490_1A_malorum_prokka,0.268,0.094,0.006,0.21,0.328,0.09,0,0.53,0.266,0
+G_24_1A_oryzi_prokka,0.798,0.624,0.524,0.32,0.202,0.44,0.53,0,0.264,0.53
+G_154_1A_ghanensis_prokka,0.444,0.36,0.26,0.056,0.062,0.176,0.266,0.264,0,0.266
+G_97_1A_fabarum_prokka,0.268,0.094,0.006,0.21,0.328,0.09,0,0.53,0.266,0
