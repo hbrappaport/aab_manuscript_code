@@ -57,3 +57,29 @@ boxplot(pH~comm_type_full, data=no_yeast_sparse)
 pH_tukey_all = TukeyHSD(aov_pH_all)
 plot(TukeyHSD(aov_pH_all))
 pH_tukey_all <-as.data.frame(pH_tukey_all[1])
+
+##other stats
+yl2_day4_aab = pH_YL2_day4 %>%
+  filter(condition != "control") %>%
+  filter(condition != "no_aab")
+
+yl2_day4_yl = pH_YL2_day4 %>%
+  filter(condition == "no_aab")
+
+#for mean and sd of aab conditions on day 4 excluding where yeast were sparse
+summary(yl2_day4_aab$pH)
+sd(yl2_day4_aab$pH)
+
+#for mean and sd of YL-only conditions on day 4 excluding where yeast were sparse
+summary(yl2_day4_yl$pH)
+sd(yl2_day4_yl$pH)
+
+yl2_day4_oryzi = pH_YL2_day4 %>%
+  filter(condition == "oryzifermentans")
+summary(yl2_day4_oryzi$pH)
+sd(yl2_day4_oryzi$pH)
+
+yl2_day4_potus = pH_YL2_day4 %>%
+  filter(condition == "potus")
+summary(yl2_day4_potus$pH)
+sd(yl2_day4_potus$pH)

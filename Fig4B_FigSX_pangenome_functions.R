@@ -22,13 +22,18 @@ withinspecies_filtered = filter(withinspecies_filtered, Shortened_Category != "0
 #removes general function prediction
 withinspecies_filtered = filter(withinspecies_filtered, Shortened_Category != "General function prediction only")
 
-grouped_bycat_all <- withinspecies_filtered %>%                                   
+#accessory carbohydrates
+ acc_carb = filter(withinspecies_filtered, Shortened_Category == "Carbohydrate transport and metabolism" & core_accessory == "accessory")
+
+ grouped_bycat_all <- withinspecies_filtered %>%                                   
   group_by(Shortened_Category, genome_name, Species) %>%                   
   count(Shortened_Category, core_accessory) %>%          # counting each categorical variable
   mutate(percent = n/sum(n))                           # creating the "%" variable and values
 
-grouped_bycat_all_accessory <- grouped_bycat_all %>%
-  filter(core_accessory == "accessory")
+grouped_bycat_all_cat <- withinspecies_filtered %>%                                   
+  group_by(Shortened_Category) %>%                   
+  count(Shortened_Category, core_accessory) %>%          # counting each categorical variable
+  mutate(percent = n/sum(n))  
 
 grouped_bycat_all_shortened = grouped_bycat_all_accessory %>%
   filter(Shortened_Category == "Mobilome: prophages, transposons" | Shortened_Category 
