@@ -35,6 +35,9 @@ grouped_bycat_all_cat <- withinspecies_filtered %>%
   count(Shortened_Category, core_accessory) %>%          # counting each categorical variable
   mutate(percent = n/sum(n))  
 
+grouped_bycat_all_accessory <- grouped_bycat_all %>%
+  filter(core_accessory == "accessory")
+
 grouped_bycat_all_shortened = grouped_bycat_all_accessory %>%
   filter(Shortened_Category == "Mobilome: prophages, transposons" | Shortened_Category 
          == "Carbohydrate transport and metabolism" | Shortened_Category ==
@@ -44,7 +47,7 @@ grouped_bycat_all_shortened = grouped_bycat_all_accessory %>%
 
 ###Fig 4B
 core_acc_by_func_all_shortened <- 
-  grouped_bycat_all_accessory_shortened %>%
+  #grouped_bycat_all_accessory_shortened %>%
   ggplot(data = grouped_bycat_all_shortened, mapping = aes(x = fct_reorder(Shortened_Category, -percent, .fun = mean, .desc =FALSE), y = percent, fill = Species)) +
   geom_boxplot(outlier.shape = NA, show.legend = FALSE, color = "#363636", lwd = 0.3) +
   geom_jitter(set.seed(666), show.legend = FALSE, pch = 21, size = 3, color = "#000000", stroke = 0.3)+

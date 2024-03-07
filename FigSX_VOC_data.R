@@ -31,6 +31,7 @@ voc_reps <- read.csv("raw_data/voc_17_highest_reps_all.csv", row.names = 1)
 voc_meta <- read.csv("raw_data/voc_17_meta.csv")
 ord_voc_reps_t_subset <- read.csv("raw_data/ord_voc_reps_t_subset.csv")
 
+voc_t_original = t(voc_reps)
 ## clean up 
 voc[is.na(voc)] <- 0
 sort(colSums(voc))
@@ -71,6 +72,8 @@ voc_t = t(voc_reps)
 dm.voc.reps.t <- calc_dm(voc_t)
 ord_voc_reps_t <- calc_ordination(dm.voc.reps.t, ord_type = 'NMDS')
 ord_voc_reps_t$VOCID <- rownames(ord_voc_reps_t)
+
+write.csv(ord_voc_reps_t, "~/Downloads/ord_voc_reps_t.csv")
   
 ggplot() +
   geom_point(data = ord_voc_reps, aes(MDS1, MDS2, fill = simpleOR), shape = 21, size = 3) +
@@ -89,51 +92,50 @@ voc_means$Compound <- rownames(voc_means)
 voc_means$Mean <- voc_means$`rowMeans(voc)`
 voc_means$`rowMeans(voc)` <- NULL
   
-###stats####
+###other stats by compound####
 
-voc_reps_groups = read.csv("~/Downloads/voc_reps_t.csv")
-voc_reps_groups_abu = convert_to_relative_abundances(voc_reps_groups)
+write.csv(voc_t, "~/Downloads/voc_t_abu.csv")
 
-voc_reps_groups %>%
-  do(tidy(kruskal.test(x= .$Sample, g = .$YL_A)))
+voc_reps_groups_abu = read.csv("raw_data/voc_t_abu.csv")
+
+
+voc_reps_groups_abu %>%
+  do(tidy(kruskal.test(x= .$Sample, g = .$Group)))
 
 pwc <- voc_reps_groups %>% 
   dunn_test(Palmitic.Acid ~ Group, p.adjust.method = "bonferroni") 
 pwc
 
 
-voc_reps_groups_abu = read.csv("~/Downloads/voc_reps_highest_all_abu_t.csv")
 
 voc_reps_groups_filtered = read.csv("~/Downloads/voc_abu_filtered_one_perc.csv")
 
 ## look at all, at the same time
 
-voc_yl_a_filt = voc_reps_groups_filtered %>%
+########################################
+voc_abu_new = voc_reps_groups_abu %>%
   select(-Group, -Sample) %>%
   pivot_longer(!YL_A) %>%
   group_by(name) %>%
   do(tidy(kruskal.test(x= .$value, g = .$YL_A)))
 
-p_adj = stats::p.adjust(p = voc_yl_a_filt$p.value, method = "fdr")
+p_adj = stats::p.adjust(p = voc_abu_new$p.value, method = "fdr")
 
 
-voc_yl_a_filt$p_adj = p_adj
-
-
-
+voc_abu_new$p_adj = p_adj
+###########################################
 write.csv(voc_yl_a_filt, "~/Downloads/voc_yl_a_stats_filt.csv")
 
-voc_groups = voc_reps_groups_abu %>%
-  select(-YL_A, -Sample) %>%
-  pivot_longer(!Group) %>%
-  group_by(name) %>%
-  do(tidy(kruskal.test(x= .$value, g = .$Group))) %>%
-  mutate(p_adj = p.adjust(p.value, method = "bonferroni"))
-
-
-voc_out = voc_reps_groups_abu %>%
+voc_abu_new = voc_reps_groups_abu %>%
   select(-Group, -Sample) %>%
   pivot_longer(!YL_A) %>%
-  group_by(name) %>% 
-  do(tidy(kruskal.test(x= .$value, g = .$YL_A))) %>%
-  mutate(p_adj = p.adjust(pvalue, method = bonferroni))
+  group_by(name) %>%
+  do(tidy(wilcox.test(x= .$value, g = .$YL_A)))
+
+p_adj = stats::p.adjust(p = voc_abu_new$p.value, method = "fdr")
+
+voc_abu_new$p_adj = p_adj
+
+
+nmds_voc = read.csv("raw_data/nmds_voc_test.csv")
+nmds_voc_longer = pivot_longer(nmds_voc, "MDS1")
