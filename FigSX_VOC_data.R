@@ -73,7 +73,7 @@ dm.voc.reps.t <- calc_dm(voc_t)
 ord_voc_reps_t <- calc_ordination(dm.voc.reps.t, ord_type = 'NMDS')
 ord_voc_reps_t$VOCID <- rownames(ord_voc_reps_t)
 
-write.csv(ord_voc_reps_t, "~/Downloads/ord_voc_reps_t.csv")
+#write.csv(ord_voc_reps_t, "~/Downloads/ord_voc_reps_t.csv")
   
 ggplot() +
   geom_point(data = ord_voc_reps, aes(MDS1, MDS2, fill = simpleOR), shape = 21, size = 3) +
@@ -94,50 +94,27 @@ voc_means$`rowMeans(voc)` <- NULL
   
 ###other stats by compound####
 
-write.csv(voc_t, "~/Downloads/voc_t_abu.csv")
+#write.csv(voc_t, "~/Downloads/voc_t_abu.csv")
 
 voc_reps_groups_abu = read.csv("raw_data/voc_t_abu.csv")
-
 
 voc_reps_groups_abu %>%
   do(tidy(kruskal.test(x= .$Sample, g = .$Group)))
 
-pwc <- voc_reps_groups %>% 
-  dunn_test(Palmitic.Acid ~ Group, p.adjust.method = "bonferroni") 
+pwc <- voc_reps_groups_abu %>% 
+  dunn_test(Palmitic.Acid ~ Group, p.adjust.method = "fdr") 
 pwc
 
+voc_reps_groups_abu %>% 
+  dunn_test(Melibiose ~ Group, p.adjust.method = "fdr") 
+
+voc_reps_groups_abu %>% 
+  dunn_test(Stearic.acid ~ Group, p.adjust.method = "fdr")
+
+### lapply solution ???
+data <- lapply(colname2, function(x) {
+  rstatix::dunn_test(iris, reformulate(colname1, x),  
+                     p.adjust.method = "fdr")
+})
 
 
-voc_reps_groups_filtered = read.csv("~/Downloads/voc_abu_filtered_one_perc.csv")
-
-## look at all, at the same time
-
-########################################
-voc_abu_new = voc_reps_groups_abu %>%
-  select(-Group, -Sample) %>%
-  pivot_longer(!YL_A) %>%
-  group_by(name) %>%
-  do(tidy(kruskal.test(x= .$value, g = .$YL_A)))
-
-p_adj = stats::p.adjust(p = voc_abu_new$p.value, method = "fdr")
-
-
-voc_abu_new$p_adj = p_adj
-###########################################
-write.csv(voc_yl_a_filt, "~/Downloads/voc_yl_a_stats_filt.csv")
-
-voc_abu_new = voc_reps_groups_abu %>%
-  select(-Group, -Sample) %>%
-  pivot_longer(!YL_A) %>%
-  group_by(name) %>%
-  do(tidy(wilcox.test(x= .$value, g = .$YL_A)))
-
-p_adj = stats::p.adjust(p = voc_abu_new$p.value, method = "fdr")
-
-voc_abu_new$p_adj = p_adj
-
-
-nmds_voc = read.csv("raw_data/nmds_voc_test.csv")
-nmds_voc_longer = pivot_longer(nmds_voc, "VOCID")
-
-write.csv(voc_means, "~/Downloads/voc_means.csv")
