@@ -41,7 +41,7 @@ voc <- convert_to_relative_abundances(voc)
 voc_reps[is.na(voc_reps)] <- 0
 sort(colSums(voc_reps))
 voc_reps <- convert_to_relative_abundances(voc_reps)
-voc_reps_abu_t <- pivot_longer(voc_reps, X)
+#voc_reps_abu_t <- pivot_longer(voc_reps, X)
 
 ## First look at within vs across reps
 dm.voc.avg <- calc_dm(voc)
@@ -138,4 +138,6 @@ voc_abu_new$p_adj = p_adj
 
 
 nmds_voc = read.csv("raw_data/nmds_voc_test.csv")
-nmds_voc_longer = pivot_longer(nmds_voc, "MDS1")
+nmds_voc_longer = pivot_longer(nmds_voc, "VOCID")
+
+write.csv(voc_means, "~/Downloads/voc_means.csv")
