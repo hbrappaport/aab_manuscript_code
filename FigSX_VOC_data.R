@@ -32,6 +32,7 @@ voc_meta <- read.csv("raw_data/voc_17_meta.csv")
 ord_voc_reps_t_subset <- read.csv("raw_data/ord_voc_reps_t_subset.csv")
 
 voc_t_original = t(voc_reps)
+
 ## clean up 
 voc[is.na(voc)] <- 0
 sort(colSums(voc))
@@ -59,7 +60,6 @@ colnames(ord_voc_reps) <- c("MDS1", "MDS2", "sampleID", "simpleOR", "simpleID", 
 
 # find and add hulls
 hulls <- ddply(ord_voc_reps, "simpleOR", find_hull)
-
 
 # And permanova for stats # R2 of sample origin explaining reps
 adonis2(formula = dm.voc.reps ~ simpleOR, data = ord_voc_reps, permutations = 999)
@@ -98,23 +98,24 @@ voc_means$`rowMeans(voc)` <- NULL
 
 voc_reps_groups_abu = read.csv("raw_data/voc_t_abu.csv")
 
-voc_reps_groups_abu %>%
-  do(tidy(kruskal.test(x= .$Sample, g = .$Group)))
 
-pwc <- voc_reps_groups_abu %>% 
-  dunn_test(Palmitic.Acid ~ Group, p.adjust.method = "fdr") 
-pwc
+# format for matrix kw
+rownames(voc_reps_groups_abu) = voc_reps_groups_abu$Sample
 
-voc_reps_groups_abu %>% 
-  dunn_test(Melibiose ~ Group, p.adjust.method = "fdr") 
+# kw by YL vs. AAB
+smry_difs_yl_A = taxa_summary_by_sample_type(voc_reps, ord_voc_reps, 
+                                             'YL_A', filter_level = 0.01, 
+                                             test_type = 'KW')
 
-voc_reps_groups_abu %>% 
-  dunn_test(Stearic.acid ~ Group, p.adjust.method = "fdr")
+# kw by AAB treat
+smry_difs_AAB_treat = taxa_summary_by_sample_type(voc_reps, ord_voc_reps, 
+                                             'simpleOR', filter_level = 0.01, 
+                                             test_type = 'KW')
 
-### lapply solution ???
-data <- lapply(colname2, function(x) {
-  rstatix::dunn_test(iris, reformulate(colname1, x),  
-                     p.adjust.method = "fdr")
-})
+# kw by NMDS group
+smry_difs_cluster = taxa_summary_by_sample_type(voc_reps, voc_reps_groups_abu, 
+                                             'Group', filter_level = 0.01, 
+                                             test_type = 'KW')
 
-
+# no sig. diff by treatment or YL vs. all AAB, BUT sig diffs by clusters - 
+# and could further highlight a few of those
