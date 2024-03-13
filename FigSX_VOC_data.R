@@ -24,6 +24,9 @@ library(rstatix)
 
 # functions
 find_hull <- function(ord_voc_reps) ord_voc_reps[chull(ord_voc_reps[,1], ord_voc_reps[,2]), ]
+cal_z_score <- function(x){
+  (x - mean(x)) / sd(x)
+}
 
 ## VOC data
 voc <- read.csv("raw_data/voc_17_highest_avg_nored.csv", row.names = 1)
@@ -58,6 +61,21 @@ ord_voc_reps <- cbind(ord_voc_reps, voc_meta$simpleID)
 ord_voc_reps <- cbind(ord_voc_reps, voc_meta$YL_A)
 colnames(ord_voc_reps) <- c("MDS1", "MDS2", "sampleID", "simpleOR", "simpleID", "YL_A")
 
+# hierarchical clustering
+# rescale VOC data
+voc_norm <- t(apply(voc, 1, cal_z_score))
+
+# cluster and dendrogram
+set.seed(1)
+voc_to_plot <- t(voc_norm)
+voc_bray <- calc_dm(voc)
+hclust_voc <- hclust(voc_bray, method = "ward.D2")
+as.dendrogram(hclust_voc) %>%
+  plot(horiz = TRUE)
+
+# split into 4 major groups
+cutree(tree = as.dendrogram(hclust_voc), k = 4)
+
 # find and add hulls
 hulls <- ddply(ord_voc_reps, "simpleOR", find_hull)
 
@@ -78,10 +96,10 @@ ord_voc_reps_t$VOCID <- rownames(ord_voc_reps_t)
 ggplot() +
   geom_point(data = ord_voc_reps, aes(MDS1, MDS2, fill = simpleOR), shape = 21, size = 3) +
   geom_polygon(data = hulls, alpha = 1, aes(MDS1, MDS2, fill = simpleOR)) +
-  geom_text(data = ord_voc_reps, aes(MDS1, MDS2, color = simpleOR, label = simpleID), size =3, vjust = 2) +
   scale_fill_manual(values = c("#4363ef", "#fceab4", "#c6c9ea", "#fceab4", "#fceab4", "#4363ef" ,"#d5936c")) +
   scale_color_manual(values = c("#243580", "#998e6d", "#696b7d", "#998e6d", "#998e6d", "#243580" ,"#7d5741")) +
   geom_point(data = ord_voc_reps_t, aes(-MDS1, -MDS2)) +
+  geom_text(data = ord_voc_reps, aes(MDS1, MDS2, color = simpleOR, label = simpleID), size =3, vjust = 2) +
   geom_text(data = ord_voc_reps_t_subset, aes(-MDS1, -MDS2, label = VOCID), size = 3, vjust = 2) +
   theme_classic() 
     
@@ -93,8 +111,6 @@ voc_means$Mean <- voc_means$`rowMeans(voc)`
 voc_means$`rowMeans(voc)` <- NULL
   
 ###other stats by compound####
-
-#write.csv(voc_t, "~/Downloads/voc_t_abu.csv")
 
 voc_reps_groups_abu = read.csv("raw_data/voc_t_abu.csv")
 
@@ -117,5 +133,6 @@ smry_difs_cluster = taxa_summary_by_sample_type(voc_reps, voc_reps_groups_abu,
                                              'Group', filter_level = 0.01, 
                                              test_type = 'KW')
 
+write.csv(smry_difs_cluster, "~/Downloads/smry_difs_cluster.csv")
+
 # no sig. diff by treatment or YL vs. all AAB, BUT sig diffs by clusters - 
-# and could further highlight a few of those

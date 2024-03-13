@@ -78,9 +78,9 @@ core_acc_by_func_all_shortened
 ###Fig SX
 core_acc_by_func_all <- 
   grouped_bycat_all_accessory %>%
-  ggplot(data = grouped_bycat_all_accessory, mapping = aes(x = fct_reorder(Shortened_Category, -percent, .fun = mean, .desc =FALSE), y = percent, fill = Species)) +
-  geom_boxplot(outlier.shape = NA, show.legend = FALSE, color = "#363636", lwd = 0.3) +
-  geom_jitter(set.seed(666), show.legend = FALSE, pch = 21, size = 3, color = "#000000", stroke = 0.3)+
+  ggplot(data = grouped_bycat_all_accessory, mapping = aes(x = fct_reorder(Shortened_Category, -percent, .fun = mean, .desc =FALSE), y = percent)) +
+  geom_boxplot(outlier.shape = NA, show.legend = FALSE, lwd = 0.3) +
+  geom_jitter(set.seed(666), show.legend = FALSE, pch = 21, size = 3, color = "#000000", stroke = 0.3, fill = Species)+
  scale_fill_manual(values = c("#5a738c", "#6c5a8c", "#7b5a8c")) +                           # coloring the plot
   labs(x = "Cog20 Category",                                              # labelling x axis
        y = "Percentage of Accessory Genes", # labeling y axis
