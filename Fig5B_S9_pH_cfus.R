@@ -1,12 +1,19 @@
 library(dplyr)
 library(ggplot2)
 
+###YL2 refers to SynCom129 and YL1 refers to SynCom361####
+
+##SynCom129 day 4
 pH_YL2_day4 = read.csv("raw_data/pH_data_yl2_day4.csv", sep = ",")
 
+##SynCom129 day 2
+pH_YL2_day2 = read.csv("raw_data/pH_data_yl2_day2.csv", sep = ",")
+
+##syncom129 averages and cfus
 cfus_data = read.csv("raw_data/pH_by_cfus_avg.csv", sep = ",")
 
+##all data besides where yeast were sparse
 no_yeast_sparse = read.csv("raw_data/deleted_yeast_sparse.csv", sep = ",")
-
 
 ####CFUs plot Fig 5B
 #pivot longer
@@ -28,7 +35,7 @@ ggplot(pH_YL2_day4, aes(y = pH, x = factor(comm_type, levels = c("control", "YL"
   geom_jitter() +
   theme_bw()
 
-#####All pH Fig SX
+#####All pH Fig S9
 ggplot(no_yeast_sparse, aes(y = pH, x = factor(comm_day, levels = c("C_Day2", "C_Day4", "YL_Day2", "YL_Day4", "A8_Day2", "A8_Day4", "A1_Day2", "A1_Day4",
    "A6_Day2", "A6_Day4", "A9_Day2", "A9_Day4", "A3_Day2", "A3_Day4", "A5_Day2", "A5_Day4", "A4_Day2", "A4_Day4",
         "A10_Day2", "A10_Day4", "A2_Day2", "A2_Day4", "A7_Day2", "A7_Day4")), color = day, shape = community)) +
@@ -41,14 +48,26 @@ ggplot(no_yeast_sparse, aes(y = pH, x = factor(comm_day, levels = c("C_Day2", "C
   theme(axis.text.x = element_text(angle = 30, vjust = 1, hjust = 1), panel.background = element_rect(fill = "white", color = "grey50"), 
         panel.grid.minor.y = element_line(color = "light grey", linewidth = 0.1), panel.grid.major.y = element_line(color = "light grey", linewidth =  0.1))
 
+##ANOVA tests
 
-##ANOVA 
-##pH YL2 day 4
+##pH SynCom129 day 4
 aov_pH_yl2 = aov(pH~comm_type,data=pH_YL2_day4)
 summary(aov_pH_yl2) 
 boxplot(pH~comm_type,data=pH_YL2_day4)
 TukeyHSD(aov_pH_yl2)
 plot(TukeyHSD(aov_pH_yl2))
+
+##pH SynCom129 day 4 AAB vs. no AAB
+aov_pH_yl2_group = aov(pH~aab_noaab, data = pH_YL2_day4)
+summary(aov_pH_yl2_group)
+
+##pH SynCom361 day 4 AAB vs. no AAB
+syncom361_day4 = no_yeast_sparse %>%
+  filter(day == "Day 4") %>%
+  filter(community == "YL1")
+
+aov_pH_yl1_group = aov(pH~aab_noaab, data = syncom361_day4)
+summary(aov_pH_yl1_group)
 
 ##all pH exclusing sparse yeast
 aov_pH_all = aov(pH~comm_type_full, data=no_yeast_sparse)
@@ -58,7 +77,21 @@ pH_tukey_all = TukeyHSD(aov_pH_all)
 plot(TukeyHSD(aov_pH_all))
 pH_tukey_all <-as.data.frame(pH_tukey_all[1])
 
+
 ##other stats
+
+yl2_day2_aab = pH_YL2_day2 %>%
+  filter(aab_noaab == "aab") 
+
+summary(yl2_day2_aab$pH)
+sd(yl2_day2_aab$pH)
+
+yl2_day2_yl = pH_YL2_day2 %>%
+  filter(comm_type == "YL")
+
+summary(yl2_day2_yl$pH)
+sd(yl2_day2_yl$pH)
+  
 yl2_day4_aab = pH_YL2_day4 %>%
   filter(condition != "control") %>%
   filter(condition != "no_aab")
