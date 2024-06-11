@@ -16,17 +16,17 @@ within_species_functions = read.csv("raw_data/strain_diversity_pan_summary.csv")
 #remove unknown functions
 withinspecies_filtered = filter(within_species_functions, Shortened_Category != "Function unknown")
 
-#removes blank
+#remove blank
 withinspecies_filtered = filter(withinspecies_filtered, Shortened_Category != "0")
 
-#removes general function prediction
+#remove general function prediction
 withinspecies_filtered = filter(withinspecies_filtered, Shortened_Category != "General function prediction only")
 
 #accessory carbohydrates
  acc_carb = filter(withinspecies_filtered, Shortened_Category == "Carbohydrate transport and metabolism" & core_accessory == "accessory")
 
  grouped_bycat_all <- withinspecies_filtered %>%                                   
-  group_by(Shortened_Category, genome_name, Species) %>%                   
+  group_by(Shortened_Category, genome_name, Species_cluster) %>%                   
   count(Shortened_Category, core_accessory) %>%          # counting each categorical variable
   mutate(percent = n/sum(n))                           # creating the "%" variable and values
 
@@ -35,20 +35,20 @@ grouped_bycat_all_cat <- withinspecies_filtered %>%
   count(Shortened_Category, core_accessory) %>%          # counting each categorical variable
   mutate(percent = n/sum(n))  
 
-grouped_bycat_all_accessory <- grouped_bycat_all %>%
+grouped_bycat_all_accessory <- grouped_bycat_all %>%.   #filter by accessory genes only
   filter(core_accessory == "accessory")
 
-grouped_bycat_all_shortened = grouped_bycat_all_accessory %>%
+grouped_bycat_all_shortened = grouped_bycat_all_accessory %>% #shorten to categories of choice
   filter(Shortened_Category == "Mobilome: prophages, transposons" | Shortened_Category 
          == "Carbohydrate transport and metabolism" | Shortened_Category ==
            "Translation, ribosomal structure and biogenesis" | Shortened_Category == "Inorganic ion transport and metabolism"|
          Shortened_Category == "Energy production and conversion")
 
 
-###Fig 4B
+###Plot Fig 4B (shortened subset of cog functions)
 core_acc_by_func_all_shortened <- 
   #grouped_bycat_all_accessory_shortened %>%
-  ggplot(data = grouped_bycat_all_shortened, mapping = aes(x = fct_reorder(Shortened_Category, -percent, .fun = mean, .desc =FALSE), y = percent, fill = Species)) +
+  ggplot(data = grouped_bycat_all_shortened, mapping = aes(x = fct_reorder(Shortened_Category, -percent, .fun = mean, .desc =FALSE), y = percent, fill = Species_cluster)) +
   geom_boxplot(outlier.shape = NA, show.legend = FALSE, color = "#363636", lwd = 0.3, fill = "#ffffff") +
   geom_jitter(set.seed(666), show.legend = FALSE, pch = 21, size = 3, color = "#000000", stroke = 0.3)+
   scale_fill_manual(values = c("#5a738c", "#6c5a8c", "#7b5a8c")) +                           # coloring the plot
@@ -66,7 +66,7 @@ core_acc_by_func_all_shortened <-
   ) +
   theme(axis.text.x=element_text(size=8, angle=35,hjust=0.95,vjust=0.2)) +
   scale_x_discrete(labels = c("Mobilome", "Defense mechanisms", "Carbohydrate transport and metabolism", "Energy production and conversion", "Translation, ribosomal structure, and biogenesis"))+
-  facet_grid("Species") +
+  facet_grid("Species_cluster") +
   theme_classic() +
   theme(axis.text.x = element_text(size = 8, angle = 30, hjust =1, color = "black", family = "Arial")) +
   theme(axis.text.y = element_text(size = 8, color = "black", family = "Arial")) +
@@ -75,10 +75,10 @@ core_acc_by_func_all_shortened <-
 core_acc_by_func_all_shortened
 
 
-###Fig SX
+###Plot Fig. S5 (all cog functions)
 core_acc_by_func_all <- 
   grouped_bycat_all_accessory %>%
-  ggplot(data = grouped_bycat_all_accessory, mapping = aes(x = fct_reorder(Shortened_Category, -percent, .fun = mean, .desc =FALSE), y = percent, fill = Species)) +
+  ggplot(data = grouped_bycat_all_accessory, mapping = aes(x = fct_reorder(Shortened_Category, -percent, .fun = mean, .desc =FALSE), y = percent, fill = Species_cluster)) +
   geom_boxplot(outlier.shape = NA, show.legend = FALSE, lwd = 0.3, fill = "#ffffff") +
   geom_jitter(set.seed(666), show.legend = FALSE, pch = 21, size = 3, color = "#000000", stroke = 0.3)+
  scale_fill_manual(values = c("#5a738c", "#6c5a8c", "#7b5a8c")) +                           # coloring the plot
@@ -95,7 +95,7 @@ core_acc_by_func_all <-
     legend.title = element_text(face = "bold")                    # face the legend title
   ) +
   theme(axis.text.x=element_text(size=8, angle=35,hjust=0.95,vjust=0.2)) +
-  facet_grid("Species") +
+  facet_grid("Species_cluster") +
   theme_classic() +
   theme(axis.text.x = element_text(size = 8, angle = 30, hjust =1, color = "black", family = "Arial")) +
   theme(axis.text.y = element_text(size = 8, color = "black", family = "Arial")) +
