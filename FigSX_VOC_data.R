@@ -136,3 +136,18 @@ smry_difs_cluster = taxa_summary_by_sample_type(voc_reps, voc_reps_groups_abu,
 write.csv(smry_difs_cluster, "~/Downloads/smry_difs_cluster.csv")
 
 # no sig. diff by treatment or YL vs. all AAB, BUT sig diffs by clusters - 
+
+##bar plots for C
+stearic_acid = read.csv("raw_data/stearic_acid.csv")
+ggplot() +
+  geom_col(data = stearic_acid, aes(x = Cluster, y =Relative.abundance, fill = Cluster)) +
+  scale_fill_manual(values = c("#fceab4","#c6c9ea", "#4363ef", "#d5936c")) +
+  theme_classic()
+
+palmitic_acid = read.csv("raw_data/Palmitic_acid.csv")  
+ggplot() +
+  geom_col(data = palmitic_acid, aes(x = Cluster, y =Relative.abundance, fill = Cluster)) +
+  scale_fill_manual(values = c("#fceab4","#c6c9ea", "#4363ef", "#d5936c")) +
+  theme_classic()
+
+
