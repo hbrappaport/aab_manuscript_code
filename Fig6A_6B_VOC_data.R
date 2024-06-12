@@ -45,13 +45,11 @@ voc <- convert_to_relative_abundances(voc)
 voc_reps[is.na(voc_reps)] <- 0
 sort(colSums(voc_reps))
 voc_reps <- convert_to_relative_abundances(voc_reps)
-#voc_reps_abu_t <- pivot_longer(voc_reps, X)
 
 ## First look at within vs across reps
 dm.voc.avg <- calc_dm(voc)
 ord_voc_avg <- calc_ordination(dm.voc.avg, ord_type = 'NMDS') 
 ord_voc_avg$sampleID <- rownames(ord_voc_avg)
-#ord_voc_avg <- cbind(ord_voc_avg, voc_meta$SampleOr)
 
 dm.voc.reps <- calc_dm(voc_reps)
 ord_voc_reps <- calc_ordination(dm.voc.reps, ord_type = 'NMDS')
@@ -65,7 +63,7 @@ colnames(ord_voc_reps) <- c("MDS1", "MDS2", "sampleID", "simpleOR", "simpleID", 
 # rescale VOC data
 voc_norm <- t(apply(voc, 1, cal_z_score))
 
-# cluster and dendrogram
+# cluster and dendrogram for Fig. 6A
 set.seed(1)
 voc_to_plot <- t(voc_norm)
 voc_bray <- calc_dm(voc)
@@ -73,8 +71,8 @@ hclust_voc <- hclust(voc_bray, method = "ward.D2")
 as.dendrogram(hclust_voc) %>%
   plot(horiz = TRUE)
 
-# split into 4 major groups
-cutree(tree = as.dendrogram(hclust_voc), k = 4)
+ # split into 4 major groups (coloring for Fig. 6A)
+ cutree(tree = as.dendrogram(hclust_voc), k = 4)
 
 # find and add hulls
 hulls <- ddply(ord_voc_reps, "simpleOR", find_hull)
@@ -92,7 +90,8 @@ ord_voc_reps_t <- calc_ordination(dm.voc.reps.t, ord_type = 'NMDS')
 ord_voc_reps_t$VOCID <- rownames(ord_voc_reps_t)
 
 #write.csv(ord_voc_reps_t, "~/Downloads/ord_voc_reps_t.csv")
-  
+
+##Plot Fig 6B  
 ggplot() +
   geom_point(data = ord_voc_reps, aes(MDS1, MDS2, fill = simpleOR), shape = 21, size = 3) +
   geom_polygon(data = hulls, alpha = 1, aes(MDS1, MDS2, fill = simpleOR)) +
@@ -123,7 +122,7 @@ smry_difs_yl_A = taxa_summary_by_sample_type(voc_reps, ord_voc_reps,
                                              'YL_A', filter_level = 0.01, 
                                              test_type = 'KW')
 
-# kw by AAB treat
+# kw by AAB treatment
 smry_difs_AAB_treat = taxa_summary_by_sample_type(voc_reps, ord_voc_reps, 
                                              'simpleOR', filter_level = 0.01, 
                                              test_type = 'KW')
@@ -137,17 +136,5 @@ write.csv(smry_difs_cluster, "~/Downloads/smry_difs_cluster.csv")
 
 # no sig. diff by treatment or YL vs. all AAB, BUT sig diffs by clusters - 
 
-##bar plots for C
-stearic_acid = read.csv("raw_data/stearic_acid.csv")
-ggplot() +
-  geom_col(data = stearic_acid, aes(x = Cluster, y =Relative.abundance, fill = Cluster)) +
-  scale_fill_manual(values = c("#fceab4","#c6c9ea", "#4363ef", "#d5936c")) +
-  theme_classic()
-
-palmitic_acid = read.csv("raw_data/Palmitic_acid.csv")  
-ggplot() +
-  geom_col(data = palmitic_acid, aes(x = Cluster, y =Relative.abundance, fill = Cluster)) +
-  scale_fill_manual(values = c("#fceab4","#c6c9ea", "#4363ef", "#d5936c")) +
-  theme_classic()
 
 
