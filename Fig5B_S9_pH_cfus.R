@@ -69,7 +69,7 @@ syncom361_day4 = no_yeast_sparse %>%
 aov_pH_yl1_group = aov(pH~aab_noaab, data = syncom361_day4)
 summary(aov_pH_yl1_group)
 
-##all pH exclusing sparse yeast
+##all pH excluding sparse yeast
 aov_pH_all = aov(pH~comm_type_full, data=no_yeast_sparse)
 summary(aov_pH_all)
 boxplot(pH~comm_type_full, data=no_yeast_sparse)
@@ -83,12 +83,14 @@ pH_tukey_all <-as.data.frame(pH_tukey_all[1])
 yl2_day2_aab = pH_YL2_day2 %>%
   filter(aab_noaab == "aab") 
 
+#mean/sd of pH of AAB conditions, SynCom129 Day 2
 summary(yl2_day2_aab$pH)
 sd(yl2_day2_aab$pH)
 
 yl2_day2_yl = pH_YL2_day2 %>%
   filter(comm_type == "YL")
 
+#mean/sd of pH of YL-only, SynCom129 Day 2
 summary(yl2_day2_yl$pH)
 sd(yl2_day2_yl$pH)
   
@@ -99,19 +101,21 @@ yl2_day4_aab = pH_YL2_day4 %>%
 yl2_day4_yl = pH_YL2_day4 %>%
   filter(condition == "no_aab")
 
-#for mean and sd of aab conditions on day 4 excluding where yeast were sparse
+#for mean and sd of AAB conditions of SynCom129 on day 4 
 summary(yl2_day4_aab$pH)
 sd(yl2_day4_aab$pH)
 
-#for mean and sd of YL-only conditions on day 4 excluding where yeast were sparse
+#for mean and sd of YL-only conditionsof SynCom129 on day 4 
 summary(yl2_day4_yl$pH)
 sd(yl2_day4_yl$pH)
 
+#for mean and sd of A. oryzifermentans (highest AAB pH) of SynCom129 day 4
 yl2_day4_oryzi = pH_YL2_day4 %>%
   filter(condition == "oryzifermentans")
 summary(yl2_day4_oryzi$pH)
 sd(yl2_day4_oryzi$pH)
 
+#for mean and sd of G. potus (lowest AAB pH) of SynCom129 day 4
 yl2_day4_potus = pH_YL2_day4 %>%
   filter(condition == "potus")
 summary(yl2_day4_potus$pH)
